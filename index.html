@@ -1,92 +1,1140 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WAZEERZY Medicine Wholesale | Afghanistan</title>
-<meta name="description" content="WAZEERZY Medicine Wholesale - your trusted wholesale supplier of medicines, healthcare products, and medical supplies in Afghanistan.">
-<style>
-:root{--blue:#15538c;--orange:#ff4b1f;--light:#f6f8fb;--dark:#10233a}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,"Noto Sans Arabic",sans-serif;background:var(--light);color:var(--dark)}
-header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0001}
-.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;direction:ltr}.brand img{width:58px;height:58px;object-fit:contain;border-radius:8px}.brand b{color:var(--blue);font-size:18px}.brand small{display:block;color:#666}
-nav a{color:var(--dark);text-decoration:none;margin:0 8px;font-weight:bold} nav a:hover{color:var(--orange)}
-.hero{background:linear-gradient(120deg,var(--blue),#1d6da9);color:#fff;padding:75px 20px}
-.heroin{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.4fr .8fr;align-items:center;gap:35px}
-.hero h1{font-size:42px;margin:0 0 12px}.hero p{font-size:20px;line-height:1.9}.hero img{width:100%;max-width:360px;justify-self:center;background:#fff;border-radius:30px;padding:18px}
-.btn{display:inline-block;padding:15px 24px;border-radius:10px;text-decoration:none;font-weight:bold;margin:8px 0}.orange{background:var(--orange);color:white}.white{background:white;color:var(--blue)}
-section{max-width:1150px;margin:auto;padding:60px 20px}.title{text-align:center;color:var(--blue);font-size:30px;margin-bottom:15px}.subtitle{text-align:center;color:#666;line-height:1.8;margin-bottom:35px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:25px;border-radius:16px;box-shadow:0 6px 20px #0000000c}.card h3{color:var(--blue)}
-.products{grid-template-columns:repeat(4,1fr)}.product{background:#fff;border-radius:14px;padding:20px;text-align:center;box-shadow:0 5px 18px #0001;border-top:5px solid var(--orange)}
-.band{background:#fff0eb}.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.info{background:white;padding:25px;border-radius:16px}
-footer{background:var(--dark);color:white;text-align:center;padding:30px 15px}.note{font-size:13px;color:#777}
-@media(max-width:800px){.nav{flex-wrap:wrap;justify-content:center}nav{display:block;text-align:center;width:100%}nav a{display:inline-block;margin:6px 8px}.heroin,.contact{grid-template-columns:1fr}.hero h1{font-size:30px}.grid,.products{grid-template-columns:1fr 1fr}}
-@media(max-width:480px){.grid,.products{grid-template-columns:1fr}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wazeerzy Medicine Wholesale - Wholesale medicine and healthcare product supply for pharmacies and healthcare businesses across Afghanistan.">
+  <meta name="keywords" content="Wazeerzy, medicine wholesale, pharmaceutical wholesale, Afghanistan, pharmacy supply, medicines">
+  <meta name="author" content="Wazeerzy Medicine Wholesale">
+  <title>Wazeerzy Medicine Wholesale | Afghanistan</title>
+
+  <style>
+    :root {
+      --blue: #17639a;
+      --blue-dark: #104d7c;
+      --orange: #ff4b24;
+      --orange-dark: #e63d1b;
+      --text: #172638;
+      --muted: #667383;
+      --light: #f5f8fb;
+      --white: #ffffff;
+      --border: #e1e8ef;
+      --shadow: 0 10px 30px rgba(15, 50, 80, 0.10);
+      --radius: 18px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+    }
+
+    .header-inner {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 230px;
+    }
+
+    .brand img {
+      width: 68px;
+      height: 68px;
+      object-fit: contain;
+    }
+
+    .brand-text strong {
+      display: block;
+      color: var(--blue);
+      font-size: 25px;
+      line-height: 1.05;
+      letter-spacing: .5px;
+    }
+
+    .brand-text span {
+      display: block;
+      color: #666;
+      font-size: 14px;
+      letter-spacing: .8px;
+      margin-top: 5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-weight: 700;
+      padding: 10px 13px;
+      border-radius: 10px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--blue);
+      background: #edf5fb;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: var(--blue);
+      color: white;
+      font-size: 25px;
+      width: 46px;
+      height: 42px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      padding: 90px 0 85px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -1px;
+    }
+
+    .hero h1 span { color: #ffd0c4; }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 20px;
+      color: rgba(255,255,255,.92);
+      margin: 0 0 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 800;
+      border: 2px solid transparent;
+      transition: .2s ease;
+      cursor: pointer;
+    }
+
+    .btn-orange {
+      background: var(--orange);
+      color: white;
+    }
+
+    .btn-orange:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+    .btn-white {
+      background: white;
+      color: var(--blue-dark);
+    }
+
+    .btn-white:hover { background: #f0f6fa; transform: translateY(-1px); }
+
+    .hero-card {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(5px);
+    }
+
+    .hero-card h3 { margin-top: 0; font-size: 23px; }
+
+    .hero-card ul {
+      padding: 0;
+      margin: 20px 0 0;
+      list-style: none;
+    }
+
+    .hero-card li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    .hero-card li:last-child { border-bottom: 0; }
+
+    /* Sections */
+    section { padding: 78px 0; }
+
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.15;
+      color: var(--blue-dark);
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* Stats */
+    .stats {
+      margin-top: -36px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .stat {
+      background: white;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: 15px;
+      text-align: center;
+      padding: 23px 15px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--blue);
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .stat span { color: var(--muted); font-size: 14px; }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: var(--light);
+      border-left: 5px solid var(--orange);
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+
+    .about-box h3 { margin-top: 0; color: var(--blue-dark); font-size: 23px; }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      padding-left: 28px;
+      position: relative;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--orange);
+      font-weight: 900;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 27px;
+      background: white;
+      box-shadow: 0 5px 20px rgba(20,60,90,.05);
+      transition: .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #eaf4fb;
+      color: var(--blue);
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 { margin: 0 0 8px; color: var(--blue-dark); }
+    .card p { color: var(--muted); margin: 0; }
+
+    /* Products */
+    #products { background: var(--light); }
+
+    .product-note {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 25px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .category {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 22px 18px;
+      text-align: center;
+      font-weight: 800;
+      color: var(--blue-dark);
+    }
+
+    .category span {
+      display: block;
+      font-size: 29px;
+      margin-bottom: 7px;
+    }
+
+    /* Price */
+    .price-box {
+      max-width: 850px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #f7fbfe, #fff);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .price-box p { color: var(--muted); }
+
+    /* FAQ */
+    .faq {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin: 12px 0;
+      padding: 17px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: var(--blue-dark);
+    }
+
+    details p { color: var(--muted); margin-bottom: 0; }
+
+    /* Contact */
+    #contact { background: var(--light); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      align-items: flex-start;
+    }
+
+    .contact-item .icon {
+      flex: 0 0 48px;
+      width: 48px;
+      height: 48px;
+      margin: 0;
+      font-size: 21px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--blue-dark);
+      margin-bottom: 3px;
+    }
+
+    .contact-item span,
+    .contact-item a { color: var(--muted); }
+
+    .contact-item a:hover { color: var(--orange); }
+
+    .whatsapp-box {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      border-radius: var(--radius);
+      padding: 35px;
+    }
+
+    .whatsapp-box h3 { font-size: 28px; margin-top: 0; }
+
+    .whatsapp-box p { color: rgba(255,255,255,.88); }
+
+    /* Footer */
+    footer {
+      background: #0d273d;
+      color: white;
+      padding: 45px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 { margin-top: 0; }
+    footer p, footer a { color: rgba(255,255,255,.70); }
+    footer a:hover { color: white; }
+
+    .footer-bottom {
+      margin-top: 35px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.55);
+      font-size: 13px;
+      text-align: center;
+    }
+
+
+    /* Product catalog */
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 12px;
+      margin: 25px 0 18px;
+    }
+    .catalog-tools input, .catalog-tools select {
+      width: 100%;
+      padding: 14px 15px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      font: inherit;
+      background: white;
+      color: var(--text);
+      outline: none;
+    }
+    .catalog-tools input:focus, .catalog-tools select:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(23,99,154,.10);
+    }
+    .catalog-meta {
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:12px;
+    }
+    .table-wrap {
+      overflow:auto;
+      background:white;
+      border:1px solid var(--border);
+      border-radius:16px;
+      box-shadow:0 5px 20px rgba(20,60,90,.05);
+    }
+    .product-table {
+      width:100%;
+      border-collapse:collapse;
+      min-width:760px;
+    }
+    .product-table th, .product-table td {
+      padding:13px 14px;
+      text-align:left;
+      border-bottom:1px solid #edf1f4;
+      vertical-align:top;
+    }
+    .product-table th {
+      background:#eaf4fb;
+      color:var(--blue-dark);
+      font-size:14px;
+      position:sticky;
+      top:0;
+      z-index:1;
+    }
+    .product-table tr:last-child td { border-bottom:0; }
+    .product-table td { font-size:14px; }
+    .product-name { font-weight:800; color:var(--blue-dark); }
+    .price-cell { font-weight:800; white-space:nowrap; }
+    .order-small {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:8px 11px;
+      border-radius:8px;
+      background:var(--orange);
+      color:#fff;
+      font-size:12px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+    .empty-state {
+      text-align:center;
+      padding:30px;
+      color:var(--muted);
+      display:none;
+    }
+    @media (max-width: 600px) {
+      .catalog-tools { grid-template-columns:1fr; }
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid { grid-template-columns: 1fr; }
+
+      .cards { grid-template-columns: repeat(2, 1fr); }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .header-inner { min-height: 72px; }
+      .menu-btn { display: block; }
+      nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72px;
+        background: white;
+        padding: 12px 4%;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+      nav.open { display: flex; flex-direction: column; align-items: stretch; }
+      nav a { text-align: center; }
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 58px 0; }
+      .brand img { width: 55px; height: 55px; }
+      .brand-text strong { font-size: 20px; }
+      .brand-text span { font-size: 11px; }
+      .hero { padding: 65px 0; }
+      .hero h1 { font-size: 39px; }
+      .hero p { font-size: 17px; }
+      .cards { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .price-box { padding: 28px 20px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
- <div class="nav">
-  <div class="brand"><img src="logo.jpg" alt="Wazeerzy Logo"><div><b>WAZEERZY</b><small>MEDICINE WHOLESALE</small></div></div>
-  <nav><a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Products</a><a href="#prices">Price List</a><a href="#contact">Contact</a></nav>
- </div>
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Wazeerzy Medicine Wholesale Home">
+      <!-- Keep your existing logo file in the same GitHub repository and name it logo.png -->
+      <img src="logo.png" alt="Wazeerzy Medicine Wholesale Logo">
+      <div class="brand-text">
+        <strong>WAZEERZY</strong>
+        <span>MEDICINE WHOLESALE</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#catalog">Catalog</a>
+      <a href="#services">Services</a>
+      <a href="#price-list">Price List</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-<section class="hero" id="home">
- <div class="heroin">
-  <div>
-   <h1>WAZEERZY MEDICINE WHOLESALE</h1>
-   <p>د درملو او روغتیايي Productsو د عمده خرڅلاو لپاره ستاسو باوري همکار.</p>
-   <a class="btn orange" href="https://wa.me/93771718350?text=Hello%20WAZEERZY%20MEDICINE%20WHOLESALE%2C%20I%20would%20like%20to%20place%20an%20order.">📱 Order on WhatsApp</a><br>
-   <a class="btn white" href="#contact">له موږ سره Contact</a>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow" style="color:#ffd0c4;">Wholesale Healthcare Supply</div>
+        <h1>WAZEERZY<br><span>MEDICINE WHOLESALE</span></h1>
+        <p>
+          Wholesale medicine and healthcare product supply for pharmacies,
+          wholesalers, and healthcare businesses across Afghanistan.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-orange"
+             href="https://wa.me/93771718350?text=Hello%20Wazeerzy%20Medicine%20Wholesale,%20I%20would%20like%20to%20make%20an%20inquiry."
+             target="_blank" rel="noopener">
+            📱 Order on WhatsApp
+          </a>
+          <a class="btn btn-white" href="#contact">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Our Wholesale Focus</h3>
+        <ul>
+          <li>💊 Medicines and healthcare products</li>
+          <li>🏪 Supply for pharmacies</li>
+          <li>📦 Bulk and wholesale orders</li>
+          <li>🚚 Distribution and customer support</li>
+          <li>🇦🇫 Serving customers across Afghanistan</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <div class="stats">
+    <div class="container stats-grid">
+      <div class="stat"><strong>Wholesale</strong><span>Medicine Supply</span></div>
+      <div class="stat"><strong>Pharmacies</strong><span>Business Customers</span></div>
+      <div class="stat"><strong>Bulk Orders</strong><span>Wholesale Inquiries</span></div>
+      <div class="stat"><strong>Afghanistan</strong><span>Nationwide Focus</span></div>
+    </div>
   </div>
-  <img src="logo.jpg" alt="Wazeerzy Medicine Wholesale">
- </div>
-</section>
 
-<section id="about">
- <h2 class="title">About Us</h2>
- <p class="subtitle">WAZEERZY MEDICINE WHOLESALE supplies wholesale medicines and related healthcare products. Our goal is to provide reliable service and easy communication for customers and business partners.</p>
- <div class="grid">
-  <div class="card"><h3>🏪 Wholesale Supply</h3><p>د عمده مشتریانو لپاره د Productsو او نرخونو منظم خدمت.</p></div>
-  <div class="card"><h3>📱 WhatsApp Order</h3><p>Send your order directly to us on WhatsApp.</p></div>
-  <div class="card"><h3>🤝 Trusted Partnership</h3><p>Building long-term relationships with customers and business partners.</p></div>
- </div>
-</section>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">About Wazeerzy</div>
+        <h2>Supporting Medicine Supply Through Wholesale Service</h2>
+        <p>
+          Wazeerzy Medicine Wholesale is focused on supplying medicines and
+          healthcare products to pharmacies, wholesalers, and healthcare businesses.
+        </p>
+      </div>
 
-<section class="band" id="products">
- <h2 class="title">Products</h2>
- <p class="subtitle">دلته به ستاسو اصلي Products او د هغوی عکسونه اضافه شي.</p>
- <div class="grid products">
-  <div class="product"><h3>💊 Medicines</h3><p>د Productsو کتلاګ</p></div>
-  <div class="product"><h3>🧴 روغتیايي Products</h3><p>د Productsو کتلاګ</p></div>
-  <div class="product"><h3>🩹 Medical Supplies</h3><p>د Productsو کتلاګ</p></div>
-  <div class="product"><h3>📦 Wholesale Orders</h3><p>Via WhatsApp</p></div>
- </div>
-</section>
+      <div class="about-grid">
+        <div>
+          <h2>Who We Are</h2>
+          <p>
+            Wazeerzy Medicine Wholesale is a medicine wholesale business based in
+            Afghanistan. We focus on wholesale supply, product inquiries, bulk orders,
+            and customer service for pharmacy and healthcare businesses.
+          </p>
+          <p>
+            Our goal is to make medicine procurement more convenient by providing
+            clear product information, wholesale communication, and easy ordering
+            through WhatsApp.
+          </p>
+        </div>
 
-<section id="prices">
- <h2 class="title">Price List</h2>
- <p class="subtitle">For current wholesale prices, request our latest price list or contact us on WhatsApp.</p>
- <div style="text-align:center"><a class="btn orange" href="https://wa.me/93771718350?text=سلام،%20مهرباني%20وکړئ%20وروستۍ%20Price List%20راولېږئ.">وروستۍ Price List وغواړئ</a></div>
- <p class="note" style="text-align:center">Prices and product availability may change and should be confirmed with us.</p>
-</section>
+        <div class="about-box">
+          <h3>Our Mission</h3>
+          <p>
+            To build a reliable and accessible wholesale supply network that helps
+            pharmacies and healthcare businesses obtain the products they need.
+          </p>
 
-<section id="contact">
- <h2 class="title">له موږ سره Contact</h2>
- <div class="contact">
-  <div class="info"><h3>📍 Address</h3><p>Chawk-e-Talashy, Shamshad Plaza, First Floor</p><h3>📞 Phone / WhatsApp</h3><p dir="ltr">+93 771 718 350</p></div>
-  <div class="info"><h3>For Orders</h3><p>Contact us on WhatsApp and send the product name or a photo of the item you need.</p><a class="btn orange" href="https://wa.me/93771718350">Open WhatsApp</a></div>
- </div>
-</section>
+          <h3>Our Vision</h3>
+          <p>
+            To develop a professional medicine wholesale and distribution network
+            serving customers throughout Afghanistan.
+          </p>
+
+          <ul class="check-list">
+            <li>Wholesale-focused customer service</li>
+            <li>Easy WhatsApp ordering and inquiries</li>
+            <li>Product and price-list support</li>
+            <li>Long-term business relationships</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="background:var(--light);">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">What We Do</div>
+        <h2>Our Wholesale Services</h2>
+        <p>Services designed around the needs of pharmacy and healthcare businesses.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">💊</div>
+          <h3>Medicine Wholesale</h3>
+          <p>Wholesale supply and product inquiries for medicines and healthcare products.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏪</div>
+          <h3>Pharmacy Supply</h3>
+          <p>Business-to-business supply support for pharmacies and medicine retailers.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📦</div>
+          <h3>Bulk Orders</h3>
+          <p>Contact us for larger quantities, wholesale requirements, and product availability.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>WhatsApp Ordering</h3>
+          <p>Send your product inquiry or order request directly through WhatsApp.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📋</div>
+          <h3>Price Information</h3>
+          <p>Request the latest wholesale price information and product availability.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🇦🇫</div>
+          <h3>Afghanistan Market</h3>
+          <p>Focused on supporting medicine businesses and customers across Afghanistan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Product Range</div>
+        <h2>Medicine & Healthcare Products</h2>
+        <p>
+          Our product range is organized around common pharmacy and healthcare needs.
+          Availability may change, so please contact us for the latest stock information.
+        </p>
+      </div>
+
+      <div class="product-note">
+        <strong>Looking for a specific product?</strong><br>
+        Send the product name, strength, pack size, and required quantity on WhatsApp.
+        Our team can confirm availability and wholesale pricing.
+      </div>
+
+      <div class="category-grid">
+        <div class="category"><span>💊</span>Tablets</div>
+        <div class="category"><span>💊</span>Capsules</div>
+        <div class="category"><span>🧴</span>Syrups & Oral Liquids</div>
+        <div class="category"><span>💉</span>Injections</div>
+        <div class="category"><span>🩹</span>Medical Supplies</div>
+        <div class="category"><span>🌿</span>Herbal Products</div>
+        <div class="category"><span>🧒</span>Pediatric Products</div>
+        <div class="category"><span>❤️</span>General Healthcare</div>
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a class="btn btn-orange" href="#catalog">🔎 Browse Product Catalog</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRODUCT CATALOG -->
+  <section id="catalog">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Current Product Catalog</div>
+        <h2>Search Our Products</h2>
+        <p>
+          Browse the current Wazeerzy product catalog. Search by product name,
+          company, or product code. For current availability and final wholesale
+          pricing, please confirm with us on WhatsApp.
+        </p>
+      </div>
+
+      <div class="catalog-tools">
+        <input id="productSearch" type="search"
+               placeholder="Search product name, company, or code..."
+               aria-label="Search products">
+        <select id="companyFilter" aria-label="Filter by company">
+          <option value="">All Companies</option>
+        </select>
+      </div>
+
+      <div class="catalog-meta">
+        <span id="catalogCount">Loading products...</span>
+        <span>Catalog updated: September 22, 2026</span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="product-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Company</th>
+              <th>Manufacturer</th>
+              <th>Product Code</th>
+              <th>Wholesale Price</th>
+              <th>Order</th>
+            </tr>
+          </thead>
+          <tbody id="productTableBody"></tbody>
+        </table>
+        <div id="emptyState" class="empty-state">
+          No matching products found. Please contact us on WhatsApp for assistance.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE LIST -->
+  <section id="price-list">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Wholesale Pricing</div>
+        <h2>Price List</h2>
+        <p>Request the latest wholesale prices and product availability directly from Wazeerzy.</p>
+      </div>
+
+      <div class="price-box">
+        <h3>Need the Latest Price List?</h3>
+        <p>
+          Wholesale prices and availability can change. For the most current information,
+          contact us through WhatsApp and request the latest price list.
+        </p>
+
+        <a class="btn btn-orange"
+           href="https://wa.me/93771718350?text=Hello%20Wazeerzy,%20please%20send%20me%20your%20latest%20wholesale%20price%20list."
+           target="_blank" rel="noopener">
+          📋 Request Price List
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--light);">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers for pharmacy and wholesale customers.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>How can I place an order?</summary>
+          <p>Send your order or product inquiry through WhatsApp. Include product name, strength, pack size, and quantity when available.</p>
+        </details>
+
+        <details>
+          <summary>Do you supply pharmacies?</summary>
+          <p>Yes. Wazeerzy focuses on wholesale supply and business inquiries for pharmacies and healthcare businesses.</p>
+        </details>
+
+        <details>
+          <summary>Can I ask about a product that is not listed on the website?</summary>
+          <p>Yes. The website shows product categories rather than a complete live inventory. Contact us with the product name and we can check availability.</p>
+        </details>
+
+        <details>
+          <summary>How can I get the latest price list?</summary>
+          <p>Use the “Request Price List” button or contact us directly on WhatsApp for the latest wholesale price information.</p>
+        </details>
+
+        <details>
+          <summary>Do you accept bulk orders?</summary>
+          <p>Yes. Contact us with the products and quantities you require so we can discuss your wholesale inquiry.</p>
+        </details>
+
+        <details>
+          <summary>Where is Wazeerzy Medicine Wholesale located?</summary>
+          <p>Chawk-e-Talashy, Shamshad Plaza, First Floor.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>Contact Wazeerzy</h2>
+        <p>For orders, product availability, wholesale inquiries, and price information.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Business Information</h3>
+
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <span>Chawk-e-Talashy, Shamshad Plaza, First Floor</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">📱</div>
+            <div>
+              <strong>Phone / WhatsApp</strong>
+              <a href="tel:+93771718350">+93 771 718 350</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:enayatwazeer1@gmail.com">enayatwazeer1@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">🌐</div>
+            <div>
+              <strong>Website</strong>
+              <span>wazeerzy.github.io</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsapp-box">
+          <h3>Order or Ask About a Product</h3>
+          <p>
+            For the fastest response, contact us on WhatsApp. Please include the
+            product name, strength, pack size, quantity, and your location when possible.
+          </p>
+
+          <a class="btn btn-orange"
+             href="https://wa.me/93771718350?text=Hello%20Wazeerzy%20Medicine%20Wholesale,%20I%20would%20like%20to%20make%20a%20wholesale%20inquiry."
+             target="_blank" rel="noopener">
+            📱 Chat on WhatsApp
+          </a>
+
+          <a class="btn btn-white" style="margin-left:8px;"
+             href="mailto:enayatwazeer1@gmail.com">
+            ✉️ Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
- <img src="logo.jpg" alt="logo" style="width:55px;border-radius:8px">
- <h3>WAZEERZY MEDICINE WHOLESALE</h3>
- <p>© 2026 All Rights Reserved</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>WAZEERZY MEDICINE WHOLESALE</h3>
+        <p>
+          Wholesale medicine and healthcare product supply for pharmacies,
+          wholesalers, and healthcare businesses in Afghanistan.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#about">About Us</a></p>
+        <p><a href="#products">Products</a></p>
+        <p><a href="#catalog">Product Catalog</a></p>
+        <p><a href="#price-list">Price List</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>📍 Chawk-e-Talashy, Shamshad Plaza, First Floor</p>
+        <p>📱 <a href="tel:+93771718350">+93 771 718 350</a></p>
+        <p>✉️ <a href="mailto:enayatwazeer1@gmail.com">enayatwazeer1@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> Wazeerzy Medicine Wholesale. All rights reserved.
+    </div>
+  </div>
 </footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const nav = document.getElementById("nav");
+
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    menuBtn.textContent = nav.classList.contains("open") ? "✕" : "☰";
+  });
+
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuBtn.textContent = "☰";
+    });
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+
+  const products = [{"name":"DIJEX MP SYP NEW","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0002767","wholesale":42},{"name":"RASHNIL CREAM","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0002840","wholesale":75},{"name":"HYTRIN 2MG TAB","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001322","wholesale":390},{"name":"TRONOLANE CREAM","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0003435","wholesale":65},{"name":"LOQATHRO 500MG","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0003612","wholesale":88},{"name":"ENTAMIZOL SS TAB","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001316","wholesale":90},{"name":"ENTAMIZOL DS TAB","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001315","wholesale":75},{"name":"EZOMOL 20MG","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0000519","wholesale":58},{"name":"GANATON 50MG TAB","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001319","wholesale":320},{"name":"FROBIN 100MG TAB","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001318","wholesale":140},{"name":"BECEFOL TAB","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0000039","wholesale":80},{"name":"TUCANA 400MG","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0003609","wholesale":135},{"name":"EZOMOL 40MG","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001210","wholesale":100},{"name":"SILLVER 200MG TAB","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001327","wholesale":170},{"name":"SERC 16MG","company":"ABBOTT","manufacturer":"NA","code":"WAMW-0001150","wholesale":240},{"name":"BIOCENT CAP","company":"ACCENT","manufacturer":"NA","code":"WAMW-0003928","wholesale":130},{"name":"BERGO (CABERGOLIN)","company":"ACIES","manufacturer":"NA","code":"WAMW-0004110","wholesale":65},{"name":"NEUROLITH SR","company":"ADAMJEE","manufacturer":"NA","code":"WAMW-0000466","wholesale":830},{"name":"TAMSULAD 0.4","company":"ADNOVA","manufacturer":"NA","code":"WAMW-0004176","wholesale":125},{"name":"VICKS AFG","company":"AFGHANISTAN","manufacturer":"NA","code":"WAMW-0003979","wholesale":9},{"name":"BRUFIN DS AFGHANI","company":"AFGHANISTAN","manufacturer":"NA","code":"WAMW-0003727","wholesale":45},{"name":"SODA GLYCIRINE","company":"AFGHANISTAN","manufacturer":"NA","code":"WAMW-0003880","wholesale":18},{"name":"OIL GOMINOL","company":"AFGHANISTAN","manufacturer":"NA","code":"WAMW-0004395","wholesale":28},{"name":"AFGHAN SARI","company":"AFGHINI","manufacturer":"NA","code":"WAMW-0004685","wholesale":33},{"name":"GLYZIAMET 50/500MG","company":"AGP","manufacturer":"NA","code":"WAMW-0004419","wholesale":140},{"name":"EXOTAN 5/80","company":"AGP","manufacturer":"NA","code":"WAMW-0003173","wholesale":98},{"name":"URSO 500MG","company":"AGP","manufacturer":"NA","code":"WAMW-0002675","wholesale":370},{"name":"POSTERISAN FORTE","company":"AGP","manufacturer":"NA","code":"WAMW-0003176","wholesale":140},{"name":"AXID NEO 40MG","company":"AGP","manufacturer":"NA","code":"WAMW-0004420","wholesale":145},{"name":"SPASLER P","company":"AGP","manufacturer":"NA","code":"WAMW-0001960","wholesale":95},{"name":"TONI 5 SYP","company":"AGP","manufacturer":"NA","code":"WAMW-0000618","wholesale":110},{"name":"RAA NIGHT","company":"AL ASIF LTD","manufacturer":"NA","code":"WAMW-0004147","wholesale":212},{"name":"ALBURZ HUSK 40G","company":"ALBURZ","manufacturer":"NA","code":"WAMW-0002296","wholesale":27},{"name":"UROPIN 100MG","company":"ALLMED","manufacturer":"NA","code":"WAMW-0001846","wholesale":320},{"name":"ESSOMED L CAP","company":"AL MEDREICH","manufacturer":"NA","code":"WAMW-0003958","wholesale":230},{"name":"CARDINOL 10MG","company":"AMBROSHIA","manufacturer":"NA","code":"WAMW-0002200","wholesale":58},{"name":"MAGNESIUM GLYCI GUMMIES","company":"AMERICAN","manufacturer":"NA","code":"WAMW-0004061","wholesale":360},{"name":"SKIN WHITENING GUMMIES","company":"AMERICAN","manufacturer":"NA","code":"WAMW-0004755","wholesale":265},{"name":"GLUTATHION GUMMIES","company":"AMERICAN","manufacturer":"NA","code":"WAMW-0003790","wholesale":360},{"name":"VIVIOPTAL ACTIVE CAP","company":"AMERICAN","manufacturer":"NA","code":"WAMW-0004063","wholesale":860},{"name":"URIVIS F","company":"ANVIS","manufacturer":"NA","code":"WAMW-0004776","wholesale":112},{"name":"ROSUVIS F FORTE","company":"ANVIS","manufacturer":"NA","code":"WAMW-0004680","wholesale":170},{"name":"ROSUVIS 10MG","company":"ANVIS","manufacturer":"NA","code":"WAMW-0003875","wholesale":110},{"name":"URIVIS D","company":"ANVIS","manufacturer":"NA","code":"WAMW-0004186","wholesale":75},{"name":"LINEZOVIS 600","company":"ANVIS","manufacturer":"NA","code":"WAMW-0002044","wholesale":150},{"name":"PANTOVIS IT","company":"ANVIS","manufacturer":"NA","code":"WAMW-0004015","wholesale":57},{"name":"MONTVIS MAX","company":"ANVIS","manufacturer":"NA","code":"WAMW-0003351","wholesale":48},{"name":"URIVIS 0.4","company":"ANVIS","manufacturer":"NA","code":"WAMW-0004185","wholesale":68},{"name":"TRIMOVIS VIAL","company":"ANVIS","manufacturer":"NA","code":"WAMW-0004017","wholesale":28},{"name":"CIPROVIS D DROP","company":"ANVIS","manufacturer":"NA","code":"WAMW-0002043","wholesale":25},{"name":"ROSUVIS 20MG","company":"ANVIS","manufacturer":"NA","code":"WAMW-0003400","wholesale":142},{"name":"MOXIFIN D EYE","company":"ANVIS","manufacturer":"NA","code":"WAMW-0003352","wholesale":25},{"name":"JOY 10MG","company":"ARIES","manufacturer":"NA","code":"WAMW-0002442","wholesale":105},{"name":"RITAL","company":"ARIES","manufacturer":"NA","code":"WAMW-0002161","wholesale":700},{"name":"GLUCON X SOAP","company":"ARK","manufacturer":"NA","code":"WAMW-0001659","wholesale":75},{"name":"TRIBUGIN ED","company":"ARK","manufacturer":"NA","code":"WAMW-0001178","wholesale":250},{"name":"FERROUS","company":"ARMIN PHARMA","manufacturer":"NA","code":"WAMW-0004615","wholesale":25},{"name":"PANTO D","company":"ARYAN TABESH","manufacturer":"NA","code":"WAMW-0003470","wholesale":128},{"name":"RELTIN A 25MG","company":"ARYAN TABESH","manufacturer":"NA","code":"WAMW-0004462","wholesale":60},{"name":"AMBRO A TAB","company":"ARYAN TABESH","manufacturer":"NA","code":"WAMW-0003471","wholesale":65},{"name":"ZONIP A","company":"ARYAN TABESH","manufacturer":"NA","code":"WAMW-0004463","wholesale":136},{"name":"ESCITA A 10MG","company":"ARYAN TABESH","manufacturer":"NA","code":"WAMW-0004087","wholesale":102},{"name":"RELTIN A 10MG","company":"ARYAN TABESH","manufacturer":"NA","code":"WAMW-0004461","wholesale":51},{"name":"RETOP A 150MG","company":"ARYAN TABESH","manufacturer":"NA","code":"WAMW-0004252","wholesale":145},{"name":"VOREN 50 TAB","company":"ASIAN CONTINENTAL","manufacturer":"NA","code":"WAMW-0003991","wholesale":245},{"name":"LORIN NSA (10)","company":"ASIAN CONTINENTAL","manufacturer":"NA","code":"WAMW-0003159","wholesale":60},{"name":"VOREN INJ","company":"ASIAN CONTINENTAL","manufacturer":"NA","code":"WAMW-0001676","wholesale":15.5},{"name":"ATIZA TAB","company":"ASIAN CONTINENTAL","manufacturer":"NA","code":"WAMW-0004207","wholesale":78},{"name":"VOREN 25 TAB","company":"ASIAN CONTINENTAL","manufacturer":"NA","code":"WAMW-0003251","wholesale":47},{"name":"STUGERON 25MG","company":"ASPIN","manufacturer":"NA","code":"WAMW-0002719","wholesale":90},{"name":"OBZITIC 600MG","company":"ASPIN","manufacturer":"NA","code":"WAMW-0004045","wholesale":240},{"name":"ASTEXONE 1GR","company":"ASTELLAS","manufacturer":"NA","code":"WAMW-0003931","wholesale":60},{"name":"PEGAMAX 75MG","company":"ASTRA","manufacturer":"NA","code":"WAMW-0004125","wholesale":187},{"name":"HEMOPLEX SYP","company":"ATAL","manufacturer":"NA","code":"WAMW-0004690","wholesale":72},{"name":"TALZINE SYP","company":"ATAL","manufacturer":"NA","code":"WAMW-0004634","wholesale":26},{"name":"ALTAFEN SYP","company":"ATAL","manufacturer":"NA","code":"WAMW-0004734","wholesale":33},{"name":"ALTAFEN 400 (BRUFEN)","company":"ATAL PHARMA","manufacturer":"NA","code":"WAMW-0002863","wholesale":300},{"name":"CONAZ LOT 60 ML","company":"ATCO","manufacturer":"NA","code":"WAMW-0001433","wholesale":120},{"name":"BETADERM N CREAM","company":"ATCO","manufacturer":"NA","code":"WAMW-0002780","wholesale":20},{"name":"DOXYN","company":"ATCO","manufacturer":"NA","code":"WAMW-0004753","wholesale":140},{"name":"DIOPLUS 5/160 MG","company":"ATCO","manufacturer":"NA","code":"WAMW-0001436","wholesale":360},{"name":"TANAKAN TAB","company":"ATCO","manufacturer":"NA","code":"WAMW-0000808","wholesale":155},{"name":"BETADERM N OINT","company":"ATCO","manufacturer":"NA","code":"WAMW-0001429","wholesale":23},{"name":"THALIDO 100MG","company":"ATCO","manufacturer":"NA","code":"WAMW-0000724","wholesale":240},{"name":"DIOPLUS 5/80 MG","company":"ATCO","manufacturer":"NA","code":"WAMW-0001435","wholesale":275},{"name":"APIPRAM 10MG","company":"AWP","manufacturer":"NA","code":"WAMW-0004006","wholesale":126},{"name":"ZANICAL","company":"AWP","manufacturer":"NA","code":"WAMW-0003306","wholesale":115},{"name":"TAMSULOS D CAP","company":"AWP","manufacturer":"NA","code":"WAMW-0000646","wholesale":280},{"name":"TAMSULOS","company":"AWP","manufacturer":"NA","code":"WAMW-0004169","wholesale":207},{"name":"NORWALK GEL","company":"AWP","manufacturer":"NA","code":"WAMW-0003823","wholesale":95},{"name":"APIPRIDE 50MG","company":"AWP","manufacturer":"NA","code":"WAMW-0004603","wholesale":126},{"name":"APIPRIDE 25MG","company":"AWP","manufacturer":"NA","code":"WAMW-0004007","wholesale":104},{"name":"LECORD 500MG","company":"AXIS","manufacturer":"NA","code":"WAMW-0004760","wholesale":65},{"name":"TOMOGEX P","company":"AXIS","manufacturer":"NA","code":"WAMW-0004742","wholesale":40},{"name":"OMEGA 3 (30) KOREA","company":"BAHAR SIRAT","manufacturer":"NA","code":"WAMW-0000756","wholesale":100},{"name":"PANZORID DSR","company":"BANSON","manufacturer":"NA","code":"WAMW-0003041","wholesale":33},{"name":"BEFLAM 75MG","company":"BATALA","manufacturer":"NA","code":"WAMW-0000931","wholesale":13},{"name":"TRAVOCART CREAM","company":"BAYER","manufacturer":"NA","code":"WAMW-0002656","wholesale":75},{"name":"TRAVOGEN CREAM","company":"BAYER","manufacturer":"NA","code":"WAMW-0002657","wholesale":40},{"name":"CANESTIN EXTRA","company":"BAYER","manufacturer":"NA","code":"WAMW-0003192","wholesale":75},{"name":"GRAVIBINAN 1ML","company":"BAYER","manufacturer":"NA","code":"WAMW-0000020","wholesale":113},{"name":"XARELTO 20MG","company":"BAYER","manufacturer":"NA","code":"WAMW-0004250","wholesale":1300},{"name":"TESTOVIRON 250MG","company":"BAYER","manufacturer":"NA","code":"WAMW-0002655","wholesale":155},{"name":"GRAVIBINAN 2ML","company":"BAYER","manufacturer":"NA","code":"WAMW-0002653","wholesale":145},{"name":"XARELTO 15MG","company":"BAYER","manufacturer":"NA","code":"WAMW-0004249","wholesale":1300},{"name":"PROGYLUTON","company":"BAYER","manufacturer":"NA","code":"WAMW-0002649","wholesale":285},{"name":"XARELTO 10MG","company":"BAYER","manufacturer":"NA","code":"WAMW-0004248","wholesale":1300},{"name":"CIPROXIN 250","company":"BAYER","manufacturer":"NA","code":"WAMW-0002652","wholesale":90},{"name":"BENLOR 5","company":"BENHAM","manufacturer":"NA","code":"WAMW-0004264","wholesale":85},{"name":"FLUDERM TAB 150MG","company":"BENHAM","manufacturer":"NA","code":"WAMW-0004637","wholesale":144},{"name":"X DIN SYP","company":"BENHAM","manufacturer":"NA","code":"WAMW-0004263","wholesale":68},{"name":"BACBEN 10MG","company":"BENHAM","manufacturer":"NA","code":"WAMW-0004265","wholesale":94},{"name":"VICTRIN TAB","company":"BH","manufacturer":"NA","code":"WAMW-0004258","wholesale":35},{"name":"BRITANYL 60ML","company":"BH","manufacturer":"NA","code":"WAMW-0002477","wholesale":58},{"name":"SPASRID","company":"BH","manufacturer":"NA","code":"WAMW-0004698","wholesale":135},{"name":"SERT 100MG","company":"BH","manufacturer":"NA","code":"WAMW-0001276","wholesale":185},{"name":"SERADEP 10 TAB","company":"BH","manufacturer":"NA","code":"WAMW-0002664","wholesale":115},{"name":"TESTORN 40 SOFT GEL","company":"BIOCHEMIX","manufacturer":"NA","code":"WAMW-0004235","wholesale":120},{"name":"BELCID SYP","company":"BIO LAB","manufacturer":"NA","code":"WAMW-0004757","wholesale":115},{"name":"AVASTIN 10MG","company":"BIO LABS","manufacturer":"NA","code":"WAMW-0003804","wholesale":62},{"name":"LECIT 5MG","company":"BIO LABS","manufacturer":"NA","code":"WAMW-0003089","wholesale":44},{"name":"MYCOR 5","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004193","wholesale":111},{"name":"BROZE 3MG","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004189","wholesale":149},{"name":"AZOLE SYP","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004188","wholesale":52},{"name":"LIRICA 50","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004585","wholesale":120},{"name":"BIOVIT M","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004117","wholesale":90},{"name":"LIRICA 75","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004192","wholesale":170},{"name":"CARVED 6.25","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004640","wholesale":160},{"name":"OLVANCE 20/5","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004191","wholesale":132},{"name":"MIRAMIND 15MG","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004116","wholesale":225},{"name":"RIBOCLIN 300MG","company":"BIO PHARMA","manufacturer":"NA","code":"WAMW-0004115","wholesale":120},{"name":"BENZIT 10MG","company":"BIOPHARMA","manufacturer":"NA","code":"WAMW-0004239","wholesale":98},{"name":"GASTISOL MAX SYP","company":"BIOPHARMA","manufacturer":"NA","code":"WAMW-0004266","wholesale":80},{"name":"INFLADEX TN","company":"BIOPHARMA","manufacturer":"NA","code":"WAMW-0004641","wholesale":77},{"name":"MYDROX 125","company":"BIOREX","manufacturer":"NA","code":"WAMW-0004694","wholesale":73.5},{"name":"MYDROX 250","company":"BIOREX","manufacturer":"NA","code":"WAMW-0004695","wholesale":103},{"name":"PYODIN SOL","company":"BIO WELL","manufacturer":"NA","code":"WAMW-0002819","wholesale":36},{"name":"CALAMIN D","company":"BIO WELL","manufacturer":"NA","code":"WAMW-0002820","wholesale":24},{"name":"MEDAZOLE DF 60ML","company":"BK","manufacturer":"NA","code":"WAMW-0004650","wholesale":30},{"name":"ULSANIL 120ML","company":"BLUE KAWSAR","manufacturer":"NA","code":"WAMW-0004671","wholesale":72},{"name":"DROTA VER40MG","company":"BLUE KAWSAR","manufacturer":"NA","code":"WAMW-0004697","wholesale":41},{"name":"PROXEN 550MG","company":"BLUE KAWSAR","manufacturer":"NA","code":"WAMW-0004790","wholesale":78},{"name":"B LEV 500","company":"BM PHARMA","manufacturer":"NA","code":"WAMW-0004737","wholesale":63},{"name":"RABOSH 20MG","company":"BOSCH","manufacturer":"NA","code":"WAMW-0000925","wholesale":95},{"name":"CALAMOX 625","company":"BOSCH","manufacturer":"NA","code":"WAMW-0004547","wholesale":70},{"name":"QMETEM DS 80/480","company":"BOSCH","manufacturer":"NA","code":"WAMW-0004692","wholesale":100},{"name":"QMETEM DS 40/240","company":"BOSCH","manufacturer":"NA","code":"WAMW-0004693","wholesale":100},{"name":"CIPRODERM FC","company":"BRESTON","manufacturer":"NA","code":"WAMW-0002857","wholesale":37},{"name":"GINSENGVIT PLUS","company":"BRESTON","manufacturer":"NA","code":"WAMW-0004251","wholesale":60},{"name":"PK MERZ","company":"BROOKS","manufacturer":"NA","code":"WAMW-0000832","wholesale":280},{"name":"ARNIL 50MG TAB","company":"BROOKS","manufacturer":"NA","code":"WAMW-0001242","wholesale":18},{"name":"PYODINE GEL","company":"BROOKS","manufacturer":"NA","code":"WAMW-0002173","wholesale":55},{"name":"ZEFONE INJ 1GR","company":"CADILA","manufacturer":"NA","code":"WAMW-0004333","wholesale":55},{"name":"OMEP 40MG","company":"CALIPH","manufacturer":"NA","code":"WAMW-0004477","wholesale":55},{"name":"OMEP 20MG","company":"CALIPH","manufacturer":"NA","code":"WAMW-0004478","wholesale":45},{"name":"ALPHAGLOW CREAM","company":"CAPEX","manufacturer":"NA","code":"WAMW-0003190","wholesale":390},{"name":"LEFLUNO 20MG","company":"CARAWAY","manufacturer":"NA","code":"WAMW-0003737","wholesale":220},{"name":"SITAMET XR 50/500","company":"CCL","manufacturer":"NA","code":"WAMW-0003215","wholesale":240},{"name":"GABLIN 100MG","company":"CCL","manufacturer":"NA","code":"WAMW-0004715","wholesale":205},{"name":"MONTAIR 10MG","company":"CCL","manufacturer":"NA","code":"WAMW-0004559","wholesale":100},{"name":"SITAMET XR 50/1000","company":"CCL","manufacturer":"NA","code":"WAMW-0003358","wholesale":260},{"name":"PARAXYL 20MG","company":"CCL","manufacturer":"NA","code":"WAMW-0000184","wholesale":140},{"name":"EXAPRO 10MG","company":"CCL","manufacturer":"NA","code":"WAMW-0000635","wholesale":95},{"name":"GABLIN 75MG","company":"CCL","manufacturer":"NA","code":"WAMW-0000243","wholesale":185},{"name":"PEXY 20MG","company":"CCL","manufacturer":"NA","code":"WAMW-0004546","wholesale":95},{"name":"SITA 50MG(14)TAB","company":"CCL","manufacturer":"NA","code":"WAMW-0002451","wholesale":185},{"name":"STRIVO 25MG","company":"CCL","manufacturer":"NA","code":"WAMW-0001480","wholesale":88},{"name":"BREXINE 20MG TAB","company":"CHESI","manufacturer":"NA","code":"WAMW-0000086","wholesale":190},{"name":"INDOMETHACINE 250","company":"CHINA","manufacturer":"NA","code":"WAMW-0003458","wholesale":75},{"name":"ESSENTIAL VICKS BALM","company":"CHINA","manufacturer":"NA","code":"WAMW-0002403","wholesale":22},{"name":"DEXA CHINA INJ","company":"CHINA","manufacturer":"NA","code":"WAMW-0002318","wholesale":45},{"name":"MINT F CAP","company":"CIDEX","manufacturer":"NA","code":"WAMW-0004425","wholesale":145},{"name":"XCITAL","company":"CIDEX","manufacturer":"NA","code":"WAMW-0003216","wholesale":290},{"name":"PANTOSEC IV","company":"CIPLA","manufacturer":"NA","code":"WAMW-0004309","wholesale":40},{"name":"HYLLERGIC 100MG","company":"CIPLA","manufacturer":"NA","code":"WAMW-0004308","wholesale":44},{"name":"CEKAMOX 500MG","company":"CKD","manufacturer":"NA","code":"WAMW-0004439","wholesale":370},{"name":"BARGAN 75MG","company":"CKD","manufacturer":"NA","code":"WAMW-0003813","wholesale":65},{"name":"G MYCIN","company":"CKD","manufacturer":"NA","code":"WAMW-0002794","wholesale":11},{"name":"NEOMYCINE POM","company":"CKD","manufacturer":"NA","code":"WAMW-0002793","wholesale":17},{"name":"AXAMAX 0.5MG","company":"COMBITIC GLOBAL","manufacturer":"NA","code":"WAMW-0001657","wholesale":24},{"name":"AMLUKAST LC","company":"COMBITIC GLOBAL","manufacturer":"NA","code":"WAMW-0002980","wholesale":28},{"name":"COFCOL TAB INDIA","company":"COMBITIC GLOBAL","manufacturer":"NA","code":"WAMW-0002974","wholesale":155},{"name":"PANADOL CF INDIA","company":"COMBITIC GLOBAL","manufacturer":"NA","code":"WAMW-0002973","wholesale":60},{"name":"PREDNISOLON COMBITIC","company":"COMBITIC GLOBAL","manufacturer":"NA","code":"WAMW-0002314","wholesale":42},{"name":"NORCEEN PLUS TAB","company":"COMBITIC GLOBAL","manufacturer":"NA","code":"WAMW-0001790","wholesale":560},{"name":"PANIZOX 40MG","company":"CONTINENTAL","manufacturer":"NA","code":"WAMW-0000776","wholesale":115},{"name":"NEZKIL 600 TAB","company":"CONTINENTAL","manufacturer":"NA","code":"WAMW-0000454","wholesale":415},{"name":"DIGESTINE CAP","company":"CONTINENTAL","manufacturer":"NA","code":"WAMW-0000522","wholesale":200},{"name":"CEFPROX 100MG","company":"CONTINENTAL","manufacturer":"NA","code":"WAMW-0004740","wholesale":135},{"name":"URITAM 0.4","company":"COOPER","manufacturer":"NA","code":"WAMW-0002878","wholesale":160},{"name":"ACELOF T TAB","company":"CORAL","manufacturer":"NA","code":"WAMW-0004216","wholesale":323},{"name":"FIZTUM 14 TAB","company":"CORAL","manufacturer":"NA","code":"WAMW-0004215","wholesale":189},{"name":"ONSET SPRAY","company":"CORAL","manufacturer":"NA","code":"WAMW-0003246","wholesale":130},{"name":"PALIO D CAP","company":"CORAL","manufacturer":"NA","code":"WAMW-0003006","wholesale":220},{"name":"CORAL ESCITALOPRAM 10MG","company":"CORAL","manufacturer":"NA","code":"WAMW-0004210","wholesale":162.3},{"name":"PALIO PLUS","company":"CORAL","manufacturer":"NA","code":"WAMW-0003007","wholesale":270},{"name":"PANZOLE IV","company":"COREVITA","manufacturer":"NA","code":"WAMW-0003119","wholesale":38},{"name":"ACNE CAP SOAP","company":"CRYSTOLITE","manufacturer":"NA","code":"WAMW-0000828","wholesale":74},{"name":"SCABI CAP SOAP","company":"CRYSTOLITE","manufacturer":"NA","code":"WAMW-0003674","wholesale":74},{"name":"T MOL 100MG INJ","company":"CURE","manufacturer":"NA","code":"WAMW-0002145","wholesale":110},{"name":"P LEVO INF","company":"CURE","manufacturer":"NA","code":"WAMW-0004788","wholesale":105},{"name":"DOLF 3/25","company":"DANEEN","manufacturer":"NA","code":"WAMW-0004343","wholesale":100},{"name":"DIPRO 500MG","company":"DANEEN","manufacturer":"NA","code":"WAMW-0004487","wholesale":77},{"name":"DAZIT 250MG TAB","company":"DANEEN","manufacturer":"NA","code":"WAMW-0001425","wholesale":50},{"name":"DEXPRAZ 60MG","company":"DANEEN","manufacturer":"NA","code":"WAMW-0002150","wholesale":243},{"name":"DEFXONE 1GR","company":"DANEEN","manufacturer":"NA","code":"WAMW-0002416","wholesale":100},{"name":"ZPRIDE 25MG TAB","company":"DANEEN","manufacturer":"NA","code":"WAMW-0002305","wholesale":68},{"name":"DEXPRAZ 30MG","company":"DANEEN","manufacturer":"NA","code":"WAMW-0002149","wholesale":153},{"name":"CODEX 60ML","company":"DARUGAR","manufacturer":"NA","code":"WAMW-0003972","wholesale":80},{"name":"BISACODYL DHG 5MG","company":"DHG PHARMA","manufacturer":"NA","code":"WAMW-0001571","wholesale":50},{"name":"MITRA 3 INJ","company":"DKT","manufacturer":"NA","code":"WAMW-0003025","wholesale":40},{"name":"GYNOMIX CAP","company":"DRUG","manufacturer":"NA","code":"WAMW-0004629","wholesale":247},{"name":"ERYBAC 250 (ERYTHROCINE)","company":"DRUG","manufacturer":"NA","code":"WAMW-0003976","wholesale":370},{"name":"MOOV","company":"DUBAI","manufacturer":"NA","code":"WAMW-0000654","wholesale":24},{"name":"CANNULA 24G","company":"ECOCANN PLUS","manufacturer":"NA","code":"WAMW-0003938","wholesale":6},{"name":"RUMAKEM GEL","company":"EDKEM","manufacturer":"NA","code":"WAMW-0003265","wholesale":65},{"name":"PACIKEM  T TAB","company":"EDKEM","manufacturer":"NA","code":"WAMW-0004646","wholesale":328},{"name":"FERTIKEM 50MG","company":"EDKEM","manufacturer":"NA","code":"WAMW-0003865","wholesale":136},{"name":"PACIKEM SP","company":"EDKEM","manufacturer":"NA","code":"WAMW-0004442","wholesale":171},{"name":"TRISEL 50","company":"EFROZ","manufacturer":"NA","code":"WAMW-0002953","wholesale":550},{"name":"CORBIS 5","company":"EFROZ","manufacturer":"NA","code":"WAMW-0002956","wholesale":55},{"name":"ROXIN 500","company":"EFROZ","manufacturer":"NA","code":"WAMW-0002957","wholesale":60},{"name":"WET WIPES","company":"ELEGANC","manufacturer":"NA","code":"WAMW-0002883","wholesale":60},{"name":"ELPOMIDE INJ","company":"ELITE","manufacturer":"NA","code":"WAMW-0002834","wholesale":45},{"name":"SILDEN 100MG","company":"EPICO","manufacturer":"NA","code":"WAMW-0000710","wholesale":55},{"name":"GINBEST","company":"ETIHAD","manufacturer":"NA","code":"WAMW-0004323","wholesale":140},{"name":"GASTRICA","company":"ETIHAD","manufacturer":"NA","code":"WAMW-0004318","wholesale":140},{"name":"LECO ONE","company":"ETIHAD","manufacturer":"NA","code":"WAMW-0004324","wholesale":140},{"name":"OMEGAVIT 369","company":"ETIHAD","manufacturer":"NA","code":"WAMW-0004315","wholesale":135},{"name":"E BULUS","company":"ETIHAD","manufacturer":"NA","code":"WAMW-0004317","wholesale":145},{"name":"MULTIVIVE","company":"ETIHAD","manufacturer":"NA","code":"WAMW-0004321","wholesale":140},{"name":"GLUCO WELL","company":"ETIHAD","manufacturer":"NA","code":"WAMW-0004319","wholesale":145},{"name":"BETAMETHASON LA","company":"EXIR","manufacturer":"NA","code":"WAMW-0003070","wholesale":260},{"name":"ORS FAAS","company":"FAAS","manufacturer":"NA","code":"WAMW-0004275","wholesale":120},{"name":"FONT 120MG","company":"FAAS","manufacturer":"NA","code":"WAMW-0004577","wholesale":55},{"name":"SIGNOVA 10MG","company":"FAAS","manufacturer":"NA","code":"WAMW-0004579","wholesale":25},{"name":"ICON 100 MG","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0000663","wholesale":85},{"name":"COVANCE 5/160","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0001223","wholesale":105},{"name":"GENESIS 1MG","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0002718","wholesale":85},{"name":"ACYLEX 200 TAB","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0002710","wholesale":93},{"name":"COVANCE 10/160","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0001191","wholesale":145},{"name":"ESOMEGA 40MG","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0001811","wholesale":80},{"name":"CARVEDA 12.5","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0000665","wholesale":225},{"name":"CARVEDA 6.25","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0000664","wholesale":135},{"name":"SITAGEN M 50/500","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0000637","wholesale":250},{"name":"ACYLEX 400 TAB","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0000044","wholesale":120},{"name":"CLOPID ASP 75/75","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0002092","wholesale":100},{"name":"ACYLEX 800MG","company":"FEROZ SONS","manufacturer":"NA","code":"WAMW-0000662","wholesale":125},{"name":"FINEMOX 500MG","company":"FINECURE","manufacturer":"NA","code":"WAMW-0004128","wholesale":90},{"name":"VALPONEO 200","company":"FINECURE","manufacturer":"NA","code":"WAMW-0004382","wholesale":153},{"name":"CANNULA 26G","company":"FIXO LON","manufacturer":"NA","code":"WAMW-0002489","wholesale":7},{"name":"CAMREE 15MG","company":"FOCUS","manufacturer":"NA","code":"WAMW-0001215","wholesale":97},{"name":"LASPRIDE 25MG","company":"FOCUS","manufacturer":"NA","code":"WAMW-0004272","wholesale":97},{"name":"MOLODRIN TAB","company":"FOCUS","manufacturer":"NA","code":"WAMW-0003807","wholesale":105},{"name":"UROBUTIN 5MG","company":"FOCUS","manufacturer":"NA","code":"WAMW-0000763","wholesale":110},{"name":"ZETHER 15ML","company":"FOCUS","manufacturer":"NA","code":"WAMW-0004224","wholesale":70},{"name":"FILPARFORT S","company":"FOURRTS","manufacturer":"NA","code":"WAMW-0004586","wholesale":140},{"name":"CETRALEX 100MG TAB","company":"GENETEC","manufacturer":"NA","code":"WAMW-0004689","wholesale":290},{"name":"PAROMAX CR 25","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000836","wholesale":400},{"name":"VERGO 24MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0004602","wholesale":220},{"name":"STEROL D 5000IU","company":"GENETICS","manufacturer":"NA","code":"WAMW-0003819","wholesale":107},{"name":"RAOLTA  ER 500MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0004515","wholesale":130},{"name":"NASSA 15MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000440","wholesale":175},{"name":"VENDEP 37.5","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000603","wholesale":185},{"name":"PROLEXA 10MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000557","wholesale":240},{"name":"PAROMAX CR 12.5","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000841","wholesale":270},{"name":"DEVENDA 250MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0001282","wholesale":330},{"name":"VERGO 8MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0003821","wholesale":115},{"name":"VEPRIDONE 1MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0001964","wholesale":110},{"name":"PRIDOGEN 25MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0004526","wholesale":45},{"name":"VEPRIDONE 4MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0001281","wholesale":300},{"name":"PAROMAX 20","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000840","wholesale":140},{"name":"CETRALEX 50MG TAB","company":"GENETICS","manufacturer":"NA","code":"WAMW-0001280","wholesale":330},{"name":"VENDEP XR 75MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000560","wholesale":250},{"name":"UROCRAN SACHE","company":"GENETICS","manufacturer":"NA","code":"WAMW-0004528","wholesale":125},{"name":"NEOLEPRA F 6/25","company":"GENETICS","manufacturer":"NA","code":"WAMW-0004289","wholesale":190},{"name":"TOPAGEN 25MG","company":"GENETICS","manufacturer":"NA","code":"WAMW-0000702","wholesale":575},{"name":"EXLANT 60MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0000203","wholesale":270},{"name":"MAXLAX 2MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0000436","wholesale":30},{"name":"GEN M 80/480 MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0004609","wholesale":195},{"name":"S FLOX 250MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0001007","wholesale":83},{"name":"AZOGEN 500MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0001254","wholesale":61},{"name":"RBC F TAB","company":"GENIX","manufacturer":"NA","code":"WAMW-0000311","wholesale":58},{"name":"AZOGEN 200 SYP","company":"GENIX","manufacturer":"NA","code":"WAMW-0000078","wholesale":80},{"name":"X GEN 400 TAB","company":"GENIX","manufacturer":"NA","code":"WAMW-0001490","wholesale":115},{"name":"GRAT 320 MG TABLETS","company":"GENIX","manufacturer":"NA","code":"WAMW-0000565","wholesale":238},{"name":"MUSRID 4MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0001005","wholesale":128},{"name":"DEPSIT 20MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0000226","wholesale":116},{"name":"NOVOM TAB","company":"GENIX","manufacturer":"NA","code":"WAMW-0000457","wholesale":150},{"name":"D4U INJ","company":"GENIX","manufacturer":"NA","code":"WAMW-0000140","wholesale":215},{"name":"COMIN 500 TAB","company":"GENIX","manufacturer":"NA","code":"WAMW-0000116","wholesale":82},{"name":"GEN M 40/240","company":"GENIX","manufacturer":"NA","code":"WAMW-0001342","wholesale":185},{"name":"NOVOM PLUS","company":"GENIX","manufacturer":"NA","code":"WAMW-0000429","wholesale":183},{"name":"EFECIP 500 TAB","company":"GENIX","manufacturer":"NA","code":"WAMW-0000208","wholesale":100},{"name":"GEN M 20/120 MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0000720","wholesale":185},{"name":"EFECIP 250 TAB","company":"GENIX","manufacturer":"NA","code":"WAMW-0003104","wholesale":55},{"name":"ZOLERIC 20MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0000446","wholesale":70},{"name":"DEPSIT 5MG","company":"GENIX","manufacturer":"NA","code":"WAMW-0000225","wholesale":75},{"name":"XIME 400 CAP","company":"GENIX","manufacturer":"NA","code":"WAMW-0000592","wholesale":110},{"name":"COMFORTA","company":"GENOME","manufacturer":"NA","code":"WAMW-0002065","wholesale":50},{"name":"RENAVEL 400MG","company":"GENOME","manufacturer":"NA","code":"WAMW-0000705","wholesale":525},{"name":"BACLIN 10MG","company":"GENOME","manufacturer":"NA","code":"WAMW-0000950","wholesale":105},{"name":"DICERIN 50MG","company":"GENOME","manufacturer":"NA","code":"WAMW-0002744","wholesale":225},{"name":"RENAVEL 800MG","company":"GENOME","manufacturer":"NA","code":"WAMW-0000706","wholesale":825},{"name":"CO Q 10 VITALIZE","company":"GERMANY","manufacturer":"NA","code":"WAMW-0004759","wholesale":345},{"name":"VIVIOPTAL CAP GERMANY","company":"GERMANY","manufacturer":"NA","code":"WAMW-0003406","wholesale":1170},{"name":"LILAC SYP","company":"GETZ","manufacturer":"NA","code":"WAMW-0000800","wholesale":126},{"name":"FEXET 180MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0004677","wholesale":230},{"name":"STARCOX 120MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0000283","wholesale":55},{"name":"XIMATOF 1GR","company":"GETZ","manufacturer":"NA","code":"WAMW-0004181","wholesale":64},{"name":"RISEK 40MG CAP","company":"GETZ","manufacturer":"NA","code":"WAMW-0000798","wholesale":230},{"name":"VILGET 50","company":"GETZ","manufacturer":"NA","code":"WAMW-0004195","wholesale":255},{"name":"TREVIAMET 50/1000","company":"GETZ","manufacturer":"NA","code":"WAMW-0000505","wholesale":335},{"name":"CIPESTA 250 TAB","company":"GETZ","manufacturer":"NA","code":"WAMW-0003110","wholesale":57},{"name":"ADVANT 16MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0001117","wholesale":130},{"name":"LEFLOX 500MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0000543","wholesale":280},{"name":"GABICA 100MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0000257","wholesale":220},{"name":"HCQ 200","company":"GETZ","manufacturer":"NA","code":"WAMW-0000264","wholesale":180},{"name":"GABICA 75MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0001124","wholesale":340},{"name":"TAMSULIN  D","company":"GETZ","manufacturer":"NA","code":"WAMW-0004716","wholesale":765},{"name":"RIBAZOLE 400","company":"GETZ","manufacturer":"NA","code":"WAMW-0001112","wholesale":45},{"name":"MEBEVER MR 200","company":"GETZ","manufacturer":"NA","code":"WAMW-0001127","wholesale":140},{"name":"TAMSULIN 0.4MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0000285","wholesale":395},{"name":"GABICA 50MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0000258","wholesale":165},{"name":"STARCOX 60MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0000282","wholesale":55},{"name":"SAVESTO 50MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0004720","wholesale":380},{"name":"SIVAB 7.5MG","company":"GETZ","manufacturer":"NA","code":"WAMW-0000278","wholesale":145},{"name":"VILGET 50/500","company":"GETZ","manufacturer":"NA","code":"WAMW-0004171","wholesale":300},{"name":"GLIPIN 25MG","company":"GLITZ","manufacturer":"NA","code":"WAMW-0004383","wholesale":175},{"name":"OZIP 5MG","company":"GLITZ","manufacturer":"NA","code":"WAMW-0001100","wholesale":47},{"name":"DROTI 40MG","company":"GLOBAL","manufacturer":"NA","code":"WAMW-0004631","wholesale":72},{"name":"MOLCAF TAB","company":"GLOBAL","manufacturer":"NA","code":"WAMW-0004779","wholesale":195},{"name":"FLOXENT 20MG","company":"GLOBAL","manufacturer":"NA","code":"WAMW-0003803","wholesale":42},{"name":"PELTON V SYP","company":"GLOBAL","manufacturer":"NA","code":"WAMW-0002924","wholesale":55},{"name":"BONEMIDOL 0.5MG","company":"GLOBAL","manufacturer":"NA","code":"WAMW-0004683","wholesale":76},{"name":"ARTINIL K GEL","company":"GLOBAL","manufacturer":"NA","code":"WAMW-0004380","wholesale":65},{"name":"REMAP 100ML SYP","company":"GMP","manufacturer":"NA","code":"WAMW-0002998","wholesale":80},{"name":"QUICK OIL","company":"GO FASTER","manufacturer":"NA","code":"WAMW-0004164","wholesale":130},{"name":"PRENEU 50MG","company":"GOODMAN","manufacturer":"NA","code":"WAMW-0004119","wholesale":94},{"name":"PRENEU 75MG","company":"GOODMAN","manufacturer":"NA","code":"WAMW-0004118","wholesale":102},{"name":"CICATRIN POWDER","company":"GSK","manufacturer":"NA","code":"WAMW-0001586","wholesale":55},{"name":"FEFOL VIT CAP","company":"GSK","manufacturer":"NA","code":"WAMW-0000321","wholesale":160},{"name":"SEPTRAN DS SYP","company":"GSK","manufacturer":"NA","code":"WAMW-0001851","wholesale":37},{"name":"LAMICTAL 25MG","company":"GSK","manufacturer":"NA","code":"WAMW-0004228","wholesale":420},{"name":"CAPOTEN 25MG","company":"GSK","manufacturer":"NA","code":"WAMW-0000861","wholesale":160},{"name":"ANGISIDE","company":"GSK","manufacturer":"NA","code":"WAMW-0002055","wholesale":50},{"name":"KAM DIPH","company":"HABIB AKAM","manufacturer":"NA","code":"WAMW-0003934","wholesale":49},{"name":"KAM COUGH SYP","company":"HABIB AKAM","manufacturer":"NA","code":"WAMW-0003933","wholesale":40},{"name":"DEKA DURALINE 100","company":"HANSEL","manufacturer":"NA","code":"WAMW-0002068","wholesale":87},{"name":"SESTONIL 250","company":"HANSEL","manufacturer":"NA","code":"WAMW-0002067","wholesale":85},{"name":"HIFOLIC 400MCG TAB","company":"HCLIX","manufacturer":"NA","code":"WAMW-0003639","wholesale":65},{"name":"L ARGININ 1000MG","company":"HEALTH AID","manufacturer":"NA","code":"WAMW-0004756","wholesale":270},{"name":"ARYSA 40MG","company":"HELIX","manufacturer":"NA","code":"WAMW-0004576","wholesale":80},{"name":"DANZEN DS TAB","company":"HELIX","manufacturer":"NA","code":"WAMW-0000207","wholesale":100},{"name":"HERFIX 100MG","company":"HERAI","manufacturer":"NA","code":"WAMW-0004732","wholesale":60},{"name":"HERMORAL 10","company":"HERAI","manufacturer":"NA","code":"WAMW-0002942","wholesale":42},{"name":"HERIZINE 5MG","company":"HERAI","manufacturer":"NA","code":"WAMW-0003272","wholesale":36},{"name":"HER C CHEW","company":"HERAI","manufacturer":"NA","code":"WAMW-0003349","wholesale":72},{"name":"HERLAX 500MG CAP","company":"HERAI","manufacturer":"NA","code":"WAMW-0003954","wholesale":855},{"name":"HERZINC 20MG","company":"HERAI","manufacturer":"NA","code":"WAMW-0003273","wholesale":35},{"name":"HERIDOX 100MG","company":"HERAI","manufacturer":"NA","code":"WAMW-0001712","wholesale":80},{"name":"HERFOLIC 5MG","company":"HERAI","manufacturer":"NA","code":"WAMW-0002864","wholesale":42},{"name":"HERSPA","company":"HERAI","manufacturer":"NA","code":"WAMW-0002229","wholesale":53},{"name":"HERFIX 200MG","company":"HERAI","manufacturer":"NA","code":"WAMW-0004733","wholesale":87},{"name":"SOFGEN","company":"HETERO","manufacturer":"NA","code":"WAMW-0004531","wholesale":600},{"name":"DACLA","company":"HETERO","manufacturer":"NA","code":"WAMW-0004532","wholesale":300},{"name":"SKILAX TAB","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002385","wholesale":85},{"name":"COMBIVAIR FORTE","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0000875","wholesale":160},{"name":"HITICA 90MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0003042","wholesale":240},{"name":"MISAR 20MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0001547","wholesale":115},{"name":"BIFORGE 5/160","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002389","wholesale":165},{"name":"EMESSON 50ML","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002771","wholesale":60},{"name":"MISAR 40MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0001548","wholesale":170},{"name":"NEBIX 10MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0003152","wholesale":185},{"name":"TRIFORG 10/160/25","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002457","wholesale":135},{"name":"CYROCIN 250","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0003441","wholesale":38},{"name":"MISAR AM 80/5","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0001157","wholesale":240},{"name":"BIOTIN 2500 HIGHNOON","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002395","wholesale":300},{"name":"TRIFORG 10/160/12.5","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0000287","wholesale":135},{"name":"ULSANIC SUSPENSION 120ML","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002217","wholesale":115},{"name":"FILDIL 5MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0004504","wholesale":90},{"name":"COMBIVAIR 200","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002211","wholesale":135},{"name":"MISAR 80MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0001155","wholesale":225},{"name":"FILDIL 10MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0004506","wholesale":203},{"name":"XTRACT M","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0002770","wholesale":300},{"name":"COMBIVAIR 400","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0001544","wholesale":193},{"name":"FILDIL 20MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0004505","wholesale":280},{"name":"HERBESSER 60MG","company":"HIGHNOON","manufacturer":"NA","code":"WAMW-0000265","wholesale":165},{"name":"VILDOMET 50/850","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000893","wholesale":130},{"name":"POLYMALT F TAB","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001602","wholesale":106},{"name":"SOLOSIN SR","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001293","wholesale":255},{"name":"FAMOPSIN 40MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0003209","wholesale":65},{"name":"ESKEM 20MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001087","wholesale":104},{"name":"RETERIC 75MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001392","wholesale":160},{"name":"RETERIC 100MG CAP","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000003","wholesale":175},{"name":"STOMACOL 10MG TAB","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001900","wholesale":110},{"name":"UFRIM 10MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000886","wholesale":118},{"name":"MIXEL 400 CAPSULE","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000002","wholesale":142},{"name":"ESKEM 40MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000887","wholesale":143},{"name":"MEROQUE IV 500MG INJ","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0003671","wholesale":290},{"name":"QSARTAN PLUS","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001297","wholesale":115},{"name":"VILDOMET 50/1000","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000894","wholesale":140},{"name":"DAYPIM 500MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000896","wholesale":150},{"name":"L CYN 250MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001088","wholesale":82},{"name":"QSARTAN 25","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0001296","wholesale":65},{"name":"MEROQUE 1GR","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0003672","wholesale":570},{"name":"RETERIC 50MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0003673","wholesale":145},{"name":"STAT A 10MG","company":"HIGH Q","manufacturer":"NA","code":"WAMW-0000268","wholesale":75},{"name":"FENHIL 20MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0003854","wholesale":155},{"name":"ZEEGAB 50MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0001489","wholesale":280},{"name":"DAPAMET 5/850","company":"HILTON","manufacturer":"NA","code":"WAMW-0000971","wholesale":345},{"name":"ROLIP EZ 20/10(20)","company":"HILTON","manufacturer":"NA","code":"WAMW-0000851","wholesale":385},{"name":"QUSEL 100MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0001184","wholesale":290},{"name":"DOLGINA 60MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0000972","wholesale":370},{"name":"HILVEL 400/100","company":"HILTON","manufacturer":"NA","code":"WAMW-0000769","wholesale":3250},{"name":"ZEEGAB 25MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0003079","wholesale":430},{"name":"TRANSAMIN 250 CAP","company":"HILTON","manufacturer":"NA","code":"WAMW-0000993","wholesale":555},{"name":"HIFLOX 250 TAB","company":"HILTON","manufacturer":"NA","code":"WAMW-0003719","wholesale":60},{"name":"XENGLU 10MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0001196","wholesale":140},{"name":"ZEEGAB 100MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0000541","wholesale":370},{"name":"LOJIN 25MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0003326","wholesale":196},{"name":"QUSEL 25MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0001185","wholesale":200},{"name":"RIMONA CAP","company":"HILTON","manufacturer":"NA","code":"WAMW-0000988","wholesale":300},{"name":"BOSMON 62.5MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0004651","wholesale":600},{"name":"XENGLU 25MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0000328","wholesale":390},{"name":"LOJIN 50MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0003327","wholesale":283},{"name":"CEROPHENE 50MG","company":"HILTON","manufacturer":"NA","code":"WAMW-0002383","wholesale":340},{"name":"SOFOHIL","company":"HILTON","manufacturer":"NA","code":"WAMW-0001224","wholesale":1200},{"name":"CRAN MAX AQUA SYP","company":"HILTON","manufacturer":"NA","code":"WAMW-0000967","wholesale":65},{"name":"LERACE 30ML","company":"HILTON","manufacturer":"NA","code":"WAMW-0001411","wholesale":190},{"name":"NOVOSEF 1GR","company":"HIMONT","manufacturer":"NA","code":"WAMW-0002543","wholesale":45},{"name":"ZERO PAIN","company":"HOF","manufacturer":"NA","code":"WAMW-0004044","wholesale":306},{"name":"LIVMET 50/500","company":"HOF","manufacturer":"NA","code":"WAMW-0004042","wholesale":204},{"name":"LIVMET 50/1000","company":"HOF","manufacturer":"NA","code":"WAMW-0004043","wholesale":238},{"name":"GTN OINMENT","company":"HOMEO","manufacturer":"NA","code":"WAMW-0001187","wholesale":43},{"name":"MONCHODIL 5","company":"HOWARD","manufacturer":"NA","code":"WAMW-0004217","wholesale":65},{"name":"MONCHODIL 10","company":"HOWARD","manufacturer":"NA","code":"WAMW-0004218","wholesale":80},{"name":"LUKODERMIN TAB","company":"HOWARD","manufacturer":"NA","code":"WAMW-0001791","wholesale":150},{"name":"IG 1 2 3 200GR","company":"IG","manufacturer":"NA","code":"WAMW-0003237","wholesale":145},{"name":"NIMUSIS PLUS","company":"INDIA","manufacturer":"NA","code":"WAMW-0003891","wholesale":20},{"name":"SORE CARE GEL","company":"INDIA","manufacturer":"NA","code":"WAMW-0003575","wholesale":22},{"name":"KOLD EXTRA PLUS","company":"INDIA","manufacturer":"NA","code":"WAMW-0003858","wholesale":15},{"name":"TUFCOLD SYP","company":"INDIA","manufacturer":"NA","code":"WAMW-0003367","wholesale":45},{"name":"STAR COLD CAP","company":"INDIA","manufacturer":"NA","code":"WAMW-0003860","wholesale":23},{"name":"SEAZON COLD","company":"INDIA","manufacturer":"NA","code":"WAMW-0003890","wholesale":14},{"name":"IQ GOLD","company":"INDIA","manufacturer":"NA","code":"WAMW-0003917","wholesale":680},{"name":"LOBAN LC","company":"INDIA","manufacturer":"NA","code":"WAMW-0003859","wholesale":25},{"name":"KETOMAC SHAMPOO","company":"INDIA","manufacturer":"NA","code":"WAMW-0003368","wholesale":130},{"name":"BECOLD TAB","company":"INDIA","manufacturer":"NA","code":"WAMW-0003856","wholesale":14},{"name":"DICLO CP AMP","company":"INDUS","manufacturer":"NA","code":"WAMW-0003730","wholesale":190},{"name":"VITASOL INJ","company":"INDUS","manufacturer":"NA","code":"WAMW-0003312","wholesale":185},{"name":"PREGAB M","company":"INODAYA","manufacturer":"NA","code":"WAMW-0004152","wholesale":230},{"name":"INOCARTAN 4MG","company":"INODAYA","manufacturer":"NA","code":"WAMW-0004780","wholesale":165},{"name":"ROSUPID A","company":"INODAYA","manufacturer":"NA","code":"WAMW-0004151","wholesale":350},{"name":"BRAIN RUSH DROP","company":"INODAYA","manufacturer":"NA","code":"WAMW-0004781","wholesale":290},{"name":"LT ZOL 2.5MG","company":"INTEGRATED","manufacturer":"NA","code":"WAMW-0004406","wholesale":182},{"name":"INTOVIR 400MG","company":"INTEGRATED","manufacturer":"NA","code":"WAMW-0004364","wholesale":102},{"name":"IP ZOLE DSR","company":"INTEGRATED","manufacturer":"NA","code":"WAMW-0003189","wholesale":200.08},{"name":"MENTOMED PLUS","company":"INTERMED","manufacturer":"NA","code":"WAMW-0003999","wholesale":128},{"name":"ESTARAM 10","company":"INTERMED","manufacturer":"NA","code":"WAMW-0001985","wholesale":132},{"name":"LINZOPIN 10MG","company":"INTERMED","manufacturer":"NA","code":"WAMW-0000388","wholesale":99},{"name":"FEXO M","company":"INTERMED","manufacturer":"NA","code":"WAMW-0001017","wholesale":204},{"name":"LINZOPIN 5MG","company":"INTERMED","manufacturer":"NA","code":"WAMW-0000387","wholesale":77},{"name":"PAIN MED","company":"INTERMED","manufacturer":"NA","code":"WAMW-0001987","wholesale":128},{"name":"CAPCIDOL LOTION","company":"I PRAM","manufacturer":"NA","code":"WAMW-0001980","wholesale":75},{"name":"CAPCIDOL CREAM","company":"I PRAM","manufacturer":"NA","code":"WAMW-0001981","wholesale":55},{"name":"DIAZEPAM 10MG INJ","company":"IRANI","manufacturer":"NA","code":"WAMW-0002225","wholesale":220},{"name":"B1 300MG","company":"IRANI","manufacturer":"NA","code":"WAMW-0002070","wholesale":130},{"name":"IMIPRAMIN 25MG","company":"IRANI","manufacturer":"NA","code":"WAMW-0002811","wholesale":90},{"name":"NONDROLON INJ","company":"IRANI","manufacturer":"NA","code":"WAMW-0002809","wholesale":280},{"name":"PREQUIN 0.625","company":"IRANI","manufacturer":"NA","code":"WAMW-0002996","wholesale":460},{"name":"DIMETHICONE TAB","company":"IRANI","manufacturer":"NA","code":"WAMW-0003184","wholesale":85},{"name":"PROPRANOLOL 10MG","company":"IRANI","manufacturer":"NA","code":"WAMW-0002074","wholesale":45},{"name":"KANAZINE 100MG","company":"ISIS","manufacturer":"NA","code":"WAMW-0003378","wholesale":325},{"name":"ISCIGON INJ","company":"ISIS","manufacturer":"NA","code":"WAMW-0004580","wholesale":100},{"name":"DEXASON TAB","company":"ISO","manufacturer":"NA","code":"WAMW-0004783","wholesale":60},{"name":"D FLAZ 6MG","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004744","wholesale":136},{"name":"COOL JACK EYE DROP","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004750","wholesale":34},{"name":"XYLOSON 0.1 NASAL DROP","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004749","wholesale":38},{"name":"XYLOSON0.005 NASAL DROP","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004748","wholesale":33},{"name":"KETOSON EYE DROP","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004751","wholesale":51},{"name":"CLIMOX SYP","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004746","wholesale":85},{"name":"CLIMOX DS SYP","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004747","wholesale":105},{"name":"UROLUSIN 0.4","company":"JACKSON","manufacturer":"NA","code":"WAMW-0004745","wholesale":45},{"name":"TAPROFEN 100MG","company":"JAWA","manufacturer":"NA","code":"WAMW-0004613","wholesale":85},{"name":"MR X 4MG","company":"JAWA","manufacturer":"NA","code":"WAMW-0004669","wholesale":38},{"name":"ULCICARE 40MG","company":"JAWA","manufacturer":"NA","code":"WAMW-0003649","wholesale":40},{"name":"CASODEX 50MG","company":"JUVISE","manufacturer":"NA","code":"WAMW-0004230","wholesale":1050},{"name":"SENALAX","company":"KAAP","manufacturer":"NA","code":"WAMW-0001707","wholesale":260},{"name":"KIDGRO DROP","company":"KAAP","manufacturer":"NA","code":"WAMW-0001709","wholesale":130},{"name":"KAPLOX FEMININ","company":"KAAP","manufacturer":"NA","code":"WAMW-0003732","wholesale":300},{"name":"CONCEPTA TAB","company":"KAAP","manufacturer":"NA","code":"WAMW-0003518","wholesale":500},{"name":"ICHTYOL POM","company":"KABUL ARIA","manufacturer":"NA","code":"WAMW-0001852","wholesale":15},{"name":"DIVALPRO 500 TAB","company":"KAIZEN","manufacturer":"NA","code":"WAMW-0003019","wholesale":335},{"name":"SODIUM CHLORIDE NASAL","company":"KAWASAR","manufacturer":"NA","code":"WAMW-0002502","wholesale":18},{"name":"KF GOR V SYP","company":"KHORSHID PHARMA","manufacturer":"NA","code":"WAMW-0004714","wholesale":33},{"name":"VITAMIN C DROP","company":"KHYBER","manufacturer":"NA","code":"WAMW-0002566","wholesale":25},{"name":"FUNGALEX 150MG","company":"KNOX","manufacturer":"NA","code":"WAMW-0004150","wholesale":46},{"name":"VITAMIN D3 1000 IU KOREA","company":"KOREA","manufacturer":"NA","code":"WAMW-0002400","wholesale":270},{"name":"OMEGA 3 (60) KOREA","company":"KOREA","manufacturer":"NA","code":"WAMW-0004618","wholesale":200},{"name":"OMEGA 3 6 9 (30)","company":"KOREA","manufacturer":"NA","code":"WAMW-0003748","wholesale":110},{"name":"OMEGA 3 (100) KOREA","company":"KOREA","manufacturer":"NA","code":"WAMW-0004619","wholesale":290},{"name":"OMEGA 3 6 9 (60)","company":"KOREA","manufacturer":"NA","code":"WAMW-0003567","wholesale":205},{"name":"KITRAL K","company":"K P","manufacturer":"NA","code":"WAMW-0002783","wholesale":31},{"name":"SERTALAB 50MG","company":"LABORATE","manufacturer":"NA","code":"WAMW-0004623","wholesale":75},{"name":"CEFLOX CTM 15GR","company":"LABORATE","manufacturer":"NA","code":"WAMW-0002586","wholesale":32},{"name":"MONTELAR","company":"LARK","manufacturer":"NA","code":"WAMW-0002587","wholesale":30},{"name":"PREGALAR FORTE","company":"LARK","manufacturer":"NA","code":"WAMW-0002731","wholesale":55},{"name":"TENORMIN 50MG","company":"LCI","manufacturer":"NA","code":"WAMW-0000293","wholesale":85},{"name":"ESOES 40MG","company":"LCI","manufacturer":"NA","code":"WAMW-0001858","wholesale":70},{"name":"SAKOON 3MG","company":"LCI","manufacturer":"NA","code":"WAMW-0001286","wholesale":83},{"name":"ANPRA 0.5MG","company":"LCI","manufacturer":"NA","code":"WAMW-0000067","wholesale":68},{"name":"EFEXOR XR","company":"LCI","manufacturer":"NA","code":"WAMW-0004667","wholesale":400},{"name":"DEXAFORT 40MG","company":"LCI","manufacturer":"NA","code":"WAMW-0001854","wholesale":28},{"name":"SUNPLUS SOFTGEL CAP","company":"LCI","manufacturer":"NA","code":"WAMW-0004123","wholesale":60},{"name":"ELCOXIA 90MG","company":"LEBEN","manufacturer":"NA","code":"WAMW-0003499","wholesale":153},{"name":"FEXOLEB M TAB","company":"LEBEN","manufacturer":"NA","code":"WAMW-0003775","wholesale":117},{"name":"ELCOXIA 120MG","company":"LEBEN","manufacturer":"NA","code":"WAMW-0003498","wholesale":204},{"name":"ULTOP DSR CAP","company":"LEBEN","manufacturer":"NA","code":"WAMW-0003497","wholesale":230},{"name":"RIHAEE SP TAB","company":"LEBEN","manufacturer":"NA","code":"WAMW-0003946","wholesale":122},{"name":"HEPTOCAM CAP","company":"LE MENDOZA","manufacturer":"NA","code":"WAMW-0004097","wholesale":135},{"name":"PAINFORT KT","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0003893","wholesale":82},{"name":"VENTODEP ER 75","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0004350","wholesale":131},{"name":"COPETAB F","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0004538","wholesale":165},{"name":"STERIOCORT 6 TAB","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0004349","wholesale":133},{"name":"TIGERVIT TAB","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0004213","wholesale":75},{"name":"FLUPEN M","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0004352","wholesale":83},{"name":"ESOMPRAM DSR","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0004032","wholesale":130},{"name":"LADY CARE LIQUIDE","company":"LIFECARE","manufacturer":"NA","code":"WAMW-0003895","wholesale":94},{"name":"PREDITOR 120ML","company":"LIFE PEARL","manufacturer":"NA","code":"WAMW-0004284","wholesale":63},{"name":"CYCOVAL 120ML","company":"LIFE PEARL","manufacturer":"NA","code":"WAMW-0003569","wholesale":69},{"name":"NAPZIL 500MG","company":"LIFE PEARL","manufacturer":"NA","code":"WAMW-0004508","wholesale":80},{"name":"BELINZ 600MG","company":"LIFE PEARL","manufacturer":"NA","code":"WAMW-0004552","wholesale":160},{"name":"PENTALINK D","company":"LINCOLIN","manufacturer":"NA","code":"WAMW-0004590","wholesale":100},{"name":"MOXIN EYE","company":"LINCOLIN","manufacturer":"NA","code":"WAMW-0004591","wholesale":63},{"name":"VIVIAN ROLL ON","company":"LINCOLIN","manufacturer":"NA","code":"WAMW-0004589","wholesale":144},{"name":"OLINSTAB 7.5MG","company":"LINUX","manufacturer":"NA","code":"WAMW-0004549","wholesale":65},{"name":"GABAGESIC100MG","company":"LINUX","manufacturer":"NA","code":"WAMW-0004584","wholesale":125},{"name":"OLINSTAB 5MG","company":"LINUX","manufacturer":"NA","code":"WAMW-0004548","wholesale":56},{"name":"OLINSTAB 2.5","company":"LINUX","manufacturer":"NA","code":"WAMW-0002709","wholesale":41},{"name":"OLINSTAB 10MG","company":"LINUX","manufacturer":"NA","code":"WAMW-0004550","wholesale":68},{"name":"CEFRESH 500 CAP","company":"LINZ","manufacturer":"NA","code":"WAMW-0004379","wholesale":118},{"name":"K VIT TAB","company":"LOCAL","manufacturer":"NA","code":"WAMW-0003274","wholesale":195},{"name":"GOLDEN H CREAM","company":"LOCAL","manufacturer":"NA","code":"WAMW-0004598","wholesale":30},{"name":"RUVIT D","company":"LOCAL","manufacturer":"NA","code":"WAMW-0004754","wholesale":15},{"name":"ZELINZO IV","company":"LOCAL","manufacturer":"NA","code":"WAMW-0004785","wholesale":345},{"name":"PHENYTOIN/PHENOBARBITAL","company":"LOGHMAN","manufacturer":"NA","code":"WAMW-0002224","wholesale":235},{"name":"ECAVIR 0.5MG","company":"MACTER","manufacturer":"NA","code":"WAMW-0000771","wholesale":500},{"name":"RELAXIN 3MG","company":"MACTER","manufacturer":"NA","code":"WAMW-0004725","wholesale":125},{"name":"MAXIMA 400mg","company":"MACTER","manufacturer":"NA","code":"WAMW-0000930","wholesale":100},{"name":"VENTICORT 400","company":"MACTER","manufacturer":"NA","code":"WAMW-0002555","wholesale":155},{"name":"MADICID","company":"MADINA","manufacturer":"NA","code":"WAMW-0004331","wholesale":26},{"name":"KABZ END","company":"MANKIND","manufacturer":"NA","code":"WAMW-0002999","wholesale":100},{"name":"OVAFLO SR","company":"MANKIND","manufacturer":"NA","code":"WAMW-0004012","wholesale":657},{"name":"MANFORCE ALOE VERA EPIC LUBE","company":"MANKIND","manufacturer":"NA","code":"WAMW-0004014","wholesale":108},{"name":"CAPRIL 25MG","company":"MAPLE","manufacturer":"NA","code":"WAMW-0001146","wholesale":170},{"name":"RANZOLE XR 500MG","company":"MAPLE","manufacturer":"NA","code":"WAMW-0002579","wholesale":170},{"name":"MORNING","company":"MAPLE","manufacturer":"NA","code":"WAMW-0000435","wholesale":58},{"name":"CAPRIL 12.5 MG","company":"MAPLE","manufacturer":"NA","code":"WAMW-0001195","wholesale":145},{"name":"MONIS 20MG","company":"MAPLE","manufacturer":"NA","code":"WAMW-0000370","wholesale":105},{"name":"MECOP 50MG","company":"MARINE","manufacturer":"NA","code":"WAMW-0004335","wholesale":142},{"name":"MECOP 75MG","company":"MARINE","manufacturer":"NA","code":"WAMW-0004336","wholesale":157},{"name":"PRO XIB","company":"MARS","manufacturer":"NA","code":"WAMW-0004145","wholesale":195},{"name":"RABO L CAP","company":"MARS","manufacturer":"NA","code":"WAMW-0003949","wholesale":145},{"name":"B OFLOX 400","company":"MARS","manufacturer":"NA","code":"WAMW-0004203","wholesale":108},{"name":"B FIXIME 200MG","company":"MARS","manufacturer":"NA","code":"WAMW-0002876","wholesale":100},{"name":"GLUCOPHAGE 500MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0000251","wholesale":75},{"name":"VALIUM INJ","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0003373","wholesale":140},{"name":"PRELIN 100 MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0004727","wholesale":195},{"name":"GLUCOVANCE 500/5","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0001247","wholesale":98},{"name":"REFOBACIN 80MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0001037","wholesale":90},{"name":"REFOBACIN 20MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0001035","wholesale":50},{"name":"GLUCOPHAGE 850MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0001028","wholesale":80},{"name":"LEVOMERC 500MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0002958","wholesale":110},{"name":"PRELIN 50MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0004726","wholesale":140},{"name":"ORPASE 400MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0004723","wholesale":105},{"name":"NEUROMET 500MG TAB","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0002429","wholesale":600},{"name":"NEUROBION INJ","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0001033","wholesale":435},{"name":"PRELIN 75 MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0004652","wholesale":158},{"name":"REFOBACIN 40MG","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0001036","wholesale":60},{"name":"GLUCOPHAGE 1GR","company":"MARTIN DOW","manufacturer":"NA","code":"WAMW-0001029","wholesale":140},{"name":"AMODIP V 5/80","company":"MASS","manufacturer":"NA","code":"WAMW-0002571","wholesale":125},{"name":"AMORIN 50MG","company":"MASS","manufacturer":"NA","code":"WAMW-0003276","wholesale":770},{"name":"AMODIP V 5/160","company":"MASS","manufacturer":"NA","code":"WAMW-0002570","wholesale":145},{"name":"AMODIP V 10/160","company":"MASS","manufacturer":"NA","code":"WAMW-0004653","wholesale":165},{"name":"FISKER D","company":"MEDICAMEN BIOTECH","manufacturer":"NA","code":"WAMW-0002095","wholesale":100},{"name":"INGEN 400","company":"MEDICAMEN BIOTECH","manufacturer":"NA","code":"WAMW-0004173","wholesale":100},{"name":"ONGEN 500","company":"MEDICAMEN BIOTECH","manufacturer":"NA","code":"WAMW-0004174","wholesale":100},{"name":"MEDITHER FORTE 40/240","company":"MEDICRAFT","manufacturer":"NA","code":"WAMW-0004167","wholesale":65},{"name":"MEDITHER DS 80/480","company":"MEDICRAFT","manufacturer":"NA","code":"WAMW-0004166","wholesale":65},{"name":"NEPAWELL EYE","company":"MEDIPACK","manufacturer":"NA","code":"WAMW-0003208","wholesale":126},{"name":"CLAROCIN 250MG","company":"MEDISURE","manufacturer":"NA","code":"WAMW-0004778","wholesale":95},{"name":"NESO 40MG","company":"MEDISURE","manufacturer":"NA","code":"WAMW-0004541","wholesale":65},{"name":"PINSURE 5MG","company":"MEDISURE","manufacturer":"NA","code":"WAMW-0003460","wholesale":35},{"name":"SULVO 25MG","company":"MEDISURE","manufacturer":"NA","code":"WAMW-0003462","wholesale":44},{"name":"PINSURE 10MG","company":"MEDISURE","manufacturer":"NA","code":"WAMW-0003461","wholesale":45},{"name":"NESO 20MG","company":"MEDISURE","manufacturer":"NA","code":"WAMW-0004542","wholesale":55},{"name":"TINEX 2MG","company":"MEDIZAN","manufacturer":"NA","code":"WAMW-0004388","wholesale":28},{"name":"GLUTALEX CAP","company":"MEDLEX","manufacturer":"NA","code":"WAMW-0003167","wholesale":715},{"name":"MEXETIN 60MG","company":"METRO","manufacturer":"NA","code":"WAMW-0003480","wholesale":456},{"name":"MEZAPIN 5MG","company":"METRO","manufacturer":"NA","code":"WAMW-0002236","wholesale":112},{"name":"MEZAPIN 10MG","company":"METRO","manufacturer":"NA","code":"WAMW-0002237","wholesale":170},{"name":"IG 1 2 3 400GR","company":"MILK","manufacturer":"NA","code":"WAMW-0003449","wholesale":265},{"name":"MONES VIT","company":"MONES","manufacturer":"NA","code":"WAMW-0003912","wholesale":75},{"name":"ALGIC P","company":"MSN","manufacturer":"NA","code":"WAMW-0003064","wholesale":190},{"name":"SAFETELMI H 40/12.5","company":"MSN","manufacturer":"NA","code":"WAMW-0003484","wholesale":218},{"name":"SAFETELMI H 80/12.5","company":"MSN","manufacturer":"NA","code":"WAMW-0003486","wholesale":411},{"name":"PLASEP ASP","company":"MSN","manufacturer":"NA","code":"WAMW-0003883","wholesale":196},{"name":"BREATHEZY L 10/5","company":"MSN","manufacturer":"NA","code":"WAMW-0003014","wholesale":270},{"name":"ATOREM 10","company":"MSN","manufacturer":"NA","code":"WAMW-0003012","wholesale":122},{"name":"METONCE 50MG","company":"MSN","manufacturer":"NA","code":"WAMW-0004069","wholesale":138},{"name":"RANCV 500","company":"MSN","manufacturer":"NA","code":"WAMW-0003015","wholesale":290},{"name":"LDNIL 20","company":"MSN","manufacturer":"NA","code":"WAMW-0003271","wholesale":430},{"name":"METONCE 25MG","company":"MSN","manufacturer":"NA","code":"WAMW-0003452","wholesale":122},{"name":"LDNIL 5MG","company":"MSN","manufacturer":"NA","code":"WAMW-0004706","wholesale":141},{"name":"LDNIL F 10","company":"MSN","manufacturer":"NA","code":"WAMW-0003016","wholesale":379},{"name":"EPIBALIN 75MG","company":"MSN","manufacturer":"NA","code":"WAMW-0004398","wholesale":263},{"name":"SAFETELMI AM 40/5","company":"MSN","manufacturer":"NA","code":"WAMW-0003487","wholesale":218},{"name":"ATOREM 20","company":"MSN","manufacturer":"NA","code":"WAMW-0003670","wholesale":195},{"name":"SAFETELMI AM 40/10","company":"MSN","manufacturer":"NA","code":"WAMW-0003485","wholesale":240},{"name":"ALGIC MASS","company":"MSN","manufacturer":"NA","code":"WAMW-0003882","wholesale":292},{"name":"LDNIL CV","company":"MSN","manufacturer":"NA","code":"WAMW-0003356","wholesale":355},{"name":"SILOTRIF 4MG","company":"MSN","manufacturer":"NA","code":"WAMW-0003932","wholesale":455},{"name":"SAFEACID","company":"MSN","manufacturer":"NA","code":"WAMW-0001897","wholesale":225},{"name":"BORAX POWDER","company":"MUMTAZ","manufacturer":"NA","code":"WAMW-0003520","wholesale":20},{"name":"GENTIAN VIOLET 3 %","company":"MUMTAZ","manufacturer":"NA","code":"WAMW-0002887","wholesale":75},{"name":"POVIDONE IODINE 60","company":"NA","manufacturer":"NA","code":"WAMW-0004099","wholesale":40},{"name":"CEFAZI AZ","company":"NA","manufacturer":"NA","code":"WAMW-0004624","wholesale":90},{"name":"ALLERMINE TAB","company":"NA","manufacturer":"NA","code":"WAMW-0004046","wholesale":170},{"name":"EBTIN 20MG TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0003929","wholesale":52},{"name":"COLOSPAS 135MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002207","wholesale":108},{"name":"DESCOL 20MG TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002125","wholesale":103},{"name":"NESET TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0004080","wholesale":166},{"name":"DESCOL 10MG TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002124","wholesale":50},{"name":"GLEM LIN 5/2.5/1000","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0003864","wholesale":100},{"name":"REDUPRES 5/160","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0004077","wholesale":113},{"name":"ROMYCIN 250","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0004078","wholesale":110},{"name":"BUZON 3MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000093","wholesale":105},{"name":"NORLIM 2MG TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002137","wholesale":95},{"name":"CO DEPRICAP 6/25","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000179","wholesale":100},{"name":"GYNOSPORIN CREAM 2%","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002130","wholesale":65},{"name":"BUZON 2MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000092","wholesale":150},{"name":"GLEM LIN 12.5/2.5/1000","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0004621","wholesale":140},{"name":"DYSEN FORTE TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000236","wholesale":50},{"name":"FENIX 60MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0004075","wholesale":38},{"name":"BEPSAR 25MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000083","wholesale":50},{"name":"BACIP 500 TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0003647","wholesale":70},{"name":"FLUDERM CAP 150MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0001629","wholesale":57},{"name":"BEPSAR 50MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000084","wholesale":135},{"name":"BUZON 1MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000091","wholesale":77},{"name":"GLEM LIN 10/5/1000","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0003645","wholesale":160},{"name":"ZUDICORT CREAM","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000399","wholesale":84},{"name":"NORLIM 3MG TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002138","wholesale":110},{"name":"PRAMCIT 20MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000347","wholesale":145},{"name":"PRONITRON 20MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000346","wholesale":135},{"name":"BENPROST 20MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0004699","wholesale":255},{"name":"BACIP 250 TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0003646","wholesale":38},{"name":"GABA 300MG CAP","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002127","wholesale":140},{"name":"ES LOPROT CAP 40MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0001628","wholesale":100},{"name":"BOZPAH TAB 62.5MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0001618","wholesale":300},{"name":"CLOMITAB 50MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000112","wholesale":140},{"name":"IVATAB 5MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000339","wholesale":300},{"name":"REDUPRES 10/160 TAB","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0002142","wholesale":130},{"name":"DEPRICAP 20MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000703","wholesale":180},{"name":"LINOX 600 MG","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0001632","wholesale":285},{"name":"STIR UP","company":"NABIQASIM","manufacturer":"NA","code":"WAMW-0000274","wholesale":280},{"name":"SEDAVO 20","company":"NAVEGAL","manufacturer":"NA","code":"WAMW-0000687","wholesale":113},{"name":"DISEMINE PRO","company":"NAZAR","manufacturer":"NA","code":"WAMW-0004775","wholesale":170},{"name":"PRIME CANNULA 22G","company":"NEOTEC","manufacturer":"NA","code":"WAMW-0000693","wholesale":6},{"name":"RABENEST L","company":"NEST","manufacturer":"NA","code":"WAMW-0003968","wholesale":183},{"name":"PAIN REX","company":"NEST","manufacturer":"NA","code":"WAMW-0003966","wholesale":256},{"name":"ROSUNEST 20","company":"NEST","manufacturer":"NA","code":"WAMW-0004244","wholesale":146},{"name":"FLANAC SP","company":"NEST","manufacturer":"NA","code":"WAMW-0002111","wholesale":188},{"name":"CLOMINEST 50MG","company":"NEST","manufacturer":"NA","code":"WAMW-0004713","wholesale":93},{"name":"ROSUNEST 10","company":"NEST","manufacturer":"NA","code":"WAMW-0004243","wholesale":112},{"name":"PREGANEST ML","company":"NEST","manufacturer":"NA","code":"WAMW-0003967","wholesale":268},{"name":"ROSUNEST F","company":"NEST","manufacturer":"NA","code":"WAMW-0004112","wholesale":180},{"name":"ESONEST 20MG","company":"NEST","manufacturer":"NA","code":"WAMW-0003802","wholesale":73},{"name":"CHYMOSIN FORTE","company":"NEST","manufacturer":"NA","code":"WAMW-0003633","wholesale":90},{"name":"ETORINEST 90MG","company":"NEST","manufacturer":"NA","code":"WAMW-0004008","wholesale":140},{"name":"ETORINEST 120MG","company":"NEST","manufacturer":"NA","code":"WAMW-0004245","wholesale":186},{"name":"MONTENEST LC","company":"NEST","manufacturer":"NA","code":"WAMW-0002112","wholesale":98},{"name":"PANTONEST DSR","company":"NEST","manufacturer":"NA","code":"WAMW-0003635","wholesale":190},{"name":"ESONEST 40MG","company":"NEST","manufacturer":"NA","code":"WAMW-0003634","wholesale":99},{"name":"GLIMIN","company":"NEXT","manufacturer":"NA","code":"WAMW-0002048","wholesale":95},{"name":"TRIKAT MR 35MG","company":"NEXT","manufacturer":"NA","code":"WAMW-0000699","wholesale":125},{"name":"TOBRADEX EYE","company":"NOVARTIS","manufacturer":"NA","code":"WAMW-0002465","wholesale":410},{"name":"CAFLAM 50MG","company":"NOVARTIS","manufacturer":"NA","code":"WAMW-0001200","wholesale":118},{"name":"VOLTRAL SR 100","company":"NOVARTIS","manufacturer":"NA","code":"WAMW-0000222","wholesale":240},{"name":"VOLTRAL 50MG","company":"NOVARTIS","manufacturer":"NA","code":"WAMW-0001197","wholesale":90},{"name":"VALUN 5/80MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004771","wholesale":205},{"name":"EMFLAZIN 25MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004761","wholesale":326},{"name":"EN URA 10MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004763","wholesale":755},{"name":"SITAFOR 100MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004766","wholesale":337},{"name":"ZETROL CAP 250","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004768","wholesale":77},{"name":"VALUN 5/160MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004767","wholesale":255},{"name":"EN URA 5MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004762","wholesale":457},{"name":"GENESIS 30MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004764","wholesale":105},{"name":"ZETROL CAP 500","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004769","wholesale":65},{"name":"GENESIS 60MG","company":"NOVUGEN","manufacturer":"NA","code":"WAMW-0004765","wholesale":205},{"name":"MYOFUSION SACHE","company":"NUTRA","manufacturer":"NA","code":"WAMW-0004786","wholesale":185},{"name":"MAGNESIUM NUTRAXIN TURKEY","company":"NUTRAXIN","manufacturer":"NA","code":"WAMW-0003795","wholesale":525},{"name":"ZINC NUTRAXIN","company":"NUTRAXIN","manufacturer":"NA","code":"WAMW-0004064","wholesale":220},{"name":"BIOTIN 5000 TURKEY NUTRAXIN","company":"NUTRAXIN","manufacturer":"NA","code":"WAMW-0003564","wholesale":235},{"name":"DECADRON VIAL","company":"OBS","manufacturer":"NA","code":"WAMW-0001526","wholesale":230},{"name":"AMOXICLAV 625","company":"OBS AGP","manufacturer":"NA","code":"WAMW-0002445","wholesale":80},{"name":"ZATOFEN TAB","company":"OBS AGP","manufacturer":"NA","code":"WAMW-0002597","wholesale":95},{"name":"PANTO DOM","company":"OKASHA","manufacturer":"NA","code":"WAMW-0000424","wholesale":240},{"name":"OKACOLIC DROP","company":"OKASHA","manufacturer":"NA","code":"WAMW-0001539","wholesale":62},{"name":"MOXIDEX","company":"OPHTH","manufacturer":"NA","code":"WAMW-0001352","wholesale":105},{"name":"FLATULEX DROP","company":"OPSONIN PHARMA","manufacturer":"NA","code":"WAMW-0000421","wholesale":55},{"name":"DENLA XR 50MG","company":"ORGANIC","manufacturer":"NA","code":"WAMW-0001505","wholesale":180},{"name":"DENLA XR 100MG","company":"ORGANIC","manufacturer":"NA","code":"WAMW-0003267","wholesale":240},{"name":"PROSCAR 5MG","company":"ORGANON","manufacturer":"NA","code":"WAMW-0000484","wholesale":400},{"name":"MICORT","company":"OROOJ","manufacturer":"NA","code":"WAMW-0004300","wholesale":105},{"name":"DEPIX","company":"OROOJ","manufacturer":"NA","code":"WAMW-0004298","wholesale":105},{"name":"FLUGAL 150MG","company":"OROOJ","manufacturer":"NA","code":"WAMW-0004472","wholesale":85},{"name":"DELOR 5MG","company":"OROOJ","manufacturer":"NA","code":"WAMW-0004471","wholesale":70},{"name":"DEMITE LOTION","company":"OROOJ","manufacturer":"NA","code":"WAMW-0004296","wholesale":100},{"name":"SUN X GEL","company":"OROOJ","manufacturer":"NA","code":"WAMW-0004302","wholesale":550},{"name":"LEVOPRAID 25 MG","company":"PACEFIC","manufacturer":"NA","code":"WAMW-0001732","wholesale":100},{"name":"GENURIN SEMPLICE","company":"PACIFIC","manufacturer":"NA","code":"WAMW-0000782","wholesale":290},{"name":"PACIPAR VIAL","company":"PACIFIC","manufacturer":"NA","code":"WAMW-0003622","wholesale":45},{"name":"ATORFIC 20MG","company":"PACIFIC","manufacturer":"NA","code":"WAMW-0004385","wholesale":80},{"name":"CRAFILM TAB","company":"PACIFIC","manufacturer":"NA","code":"WAMW-0003319","wholesale":65},{"name":"PACOXIB 200MG","company":"PACIFIC","manufacturer":"NA","code":"WAMW-0004543","wholesale":45},{"name":"IG SURE 400GR","company":"PAKISTANI","manufacturer":"NA","code":"WAMW-0003540","wholesale":450},{"name":"IG LF","company":"PAKISTANI","manufacturer":"NA","code":"WAMW-0004187","wholesale":324},{"name":"JETEPAR SYP","company":"PCW","manufacturer":"NA","code":"WAMW-0001094","wholesale":235},{"name":"DIPROCORT S OINT","company":"PEARL","manufacturer":"NA","code":"WAMW-0004666","wholesale":48},{"name":"PRIMOVATE OINT","company":"PEARL","manufacturer":"NA","code":"WAMW-0004659","wholesale":43},{"name":"PRIMOVATE CREAM","company":"PEARL","manufacturer":"NA","code":"WAMW-0004658","wholesale":43},{"name":"SCABI PEARL LOTION","company":"PEARL","manufacturer":"NA","code":"WAMW-0004655","wholesale":62},{"name":"CLOZOL CREAM","company":"PEARL","manufacturer":"NA","code":"WAMW-0004662","wholesale":72},{"name":"CLINDA PEARL GEL","company":"PEARL","manufacturer":"NA","code":"WAMW-0004660","wholesale":75},{"name":"INCICARE SPF 60","company":"PEARL","manufacturer":"NA","code":"WAMW-0004664","wholesale":190},{"name":"ISOPEARL GEL","company":"PEARL","manufacturer":"NA","code":"WAMW-0004665","wholesale":75},{"name":"CLOZOLE H CREAM","company":"PEARL","manufacturer":"NA","code":"WAMW-0004661","wholesale":115},{"name":"ONSET 8MG TAB","company":"PHARMADEC","manufacturer":"NA","code":"WAMW-0000489","wholesale":100},{"name":"FLUBIN 100MG","company":"PHARMA HEALTH","manufacturer":"NA","code":"WAMW-0004770","wholesale":95},{"name":"HYDROXA 500MG","company":"PHARMASOL","manufacturer":"NA","code":"WAMW-0002622","wholesale":65},{"name":"SPASMOMEN","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0001830","wholesale":110},{"name":"VALMO + 5/160/12.5","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0002598","wholesale":96},{"name":"CIPCARE 500","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0004593","wholesale":76},{"name":"ARIPEP 10MG","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0000069","wholesale":165},{"name":"ARIPEP 15MG","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0001552","wholesale":215},{"name":"SEROFT 50MG","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0001386","wholesale":310},{"name":"GALSIT MET 50/1000","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0004353","wholesale":125},{"name":"AMLOCARD 5 TAB","company":"PHARMATEC","manufacturer":"NA","code":"WAMW-0001382","wholesale":75},{"name":"INOSITA XR 50/500","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0002299","wholesale":148},{"name":"EVOROX CAP","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0001517","wholesale":185},{"name":"GOURIC 40MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0001800","wholesale":140},{"name":"ORSLIM CAP","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0003321","wholesale":800},{"name":"ACTIFLOR SACHE","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0001515","wholesale":142},{"name":"LOWPLAT PLUS 75MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000627","wholesale":85},{"name":"ESTAR 10MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0002187","wholesale":110},{"name":"AVSAR 10/160/12.5 +","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000515","wholesale":155},{"name":"LOWPLAT 75MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000374","wholesale":63},{"name":"REDEXA30MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0001808","wholesale":136},{"name":"RAMIPACE 5MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000831","wholesale":200},{"name":"BUSONIDE CAP","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0004539","wholesale":148},{"name":"X PLENDED 5MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0001932","wholesale":53},{"name":"INOSITA + 50/1000","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000946","wholesale":280},{"name":"ESTAR 20MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0002188","wholesale":150},{"name":"RAMIPACE 2.5","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000694","wholesale":153},{"name":"X PLENDED 10MG","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000493","wholesale":90},{"name":"AVSAR 5/160/12.5 +","company":"PHARMEVO","manufacturer":"NA","code":"WAMW-0000517","wholesale":135},{"name":"ERLI 10MG","company":"PHARMVO","manufacturer":"NA","code":"WAMW-0002104","wholesale":92},{"name":"NEMBUGESIC FORTE","company":"PHPL","manufacturer":"NA","code":"WAMW-0001970","wholesale":38},{"name":"CREMAPIL SYP","company":"PIL","manufacturer":"NA","code":"WAMW-0004604","wholesale":95},{"name":"ECINIL 10MG","company":"PIL","manufacturer":"NA","code":"WAMW-0004605","wholesale":198},{"name":"TELOX 300 SYP","company":"PLATINIUM","manufacturer":"NA","code":"WAMW-0003989","wholesale":220},{"name":"NORDOX 100MG","company":"PLATINIUM","manufacturer":"NA","code":"WAMW-0003793","wholesale":70},{"name":"UNIFYLINE 400MG","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0002024","wholesale":195},{"name":"CEREGIN  DROP","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0002042","wholesale":63},{"name":"SEIZUNIL 100MG/5ML","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0001572","wholesale":45},{"name":"TELOX 300","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0002858","wholesale":420},{"name":"DAPAKAN 250MG","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0000997","wholesale":210},{"name":"TELOX 600MG","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0002875","wholesale":730},{"name":"DANZOL 200 CAP","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0000524","wholesale":420},{"name":"CEREGIN 1.5MG","company":"PLATINUM","manufacturer":"NA","code":"WAMW-0001334","wholesale":95},{"name":"B COMPLEX INJ","company":"PLIVA","manufacturer":"NA","code":"WAMW-0001607","wholesale":100},{"name":"PLIVIL INJ","company":"PLIVA","manufacturer":"NA","code":"WAMW-0004276","wholesale":200},{"name":"GENTALIFE 40MG","company":"PROLIFE","manufacturer":"NA","code":"WAMW-0002764","wholesale":85},{"name":"PULSEGESIC","company":"PULS","manufacturer":"NA","code":"WAMW-0004537","wholesale":130},{"name":"GESTO TABLET","company":"QARSHI","manufacturer":"NA","code":"WAMW-0002367","wholesale":36},{"name":"NOTENSE 30MG","company":"QINTAR","manufacturer":"NA","code":"WAMW-0002930","wholesale":230},{"name":"Q METABOL","company":"Q T","manufacturer":"NA","code":"WAMW-0004700","wholesale":55},{"name":"TAIVOR 3MG","company":"RAAZEE","manufacturer":"NA","code":"WAMW-0001509","wholesale":185},{"name":"MONTEFREE L TAB","company":"RADICO REMEDIES","manufacturer":"NA","code":"WAMW-0004140","wholesale":130},{"name":"NEO MERCAZOLE","company":"RAY PHARMA","manufacturer":"NA","code":"WAMW-0001568","wholesale":155},{"name":"DISPRIN TAB","company":"RECKITT","manufacturer":"NA","code":"WAMW-0001587","wholesale":550},{"name":"METHACHLOR OINT","company":"REMINGTON","manufacturer":"NA","code":"WAMW-0001391","wholesale":30},{"name":"ROCIP EYE","company":"REMINGTON","manufacturer":"NA","code":"WAMW-0001528","wholesale":55},{"name":"OCUMOX 3.5MG OINTMENT","company":"REMINGTON","manufacturer":"NA","code":"WAMW-0004787","wholesale":120},{"name":"METHACHLOR EYE/D","company":"REMINGTON","manufacturer":"NA","code":"WAMW-0001349","wholesale":27},{"name":"XINOXY OINT","company":"REMINGTON","manufacturer":"NA","code":"WAMW-0004645","wholesale":48},{"name":"EYFEM EYE OINTMENT","company":"REMINGTON","manufacturer":"NA","code":"WAMW-0003542","wholesale":38},{"name":"MMS SPARY","company":"REMINGTON","manufacturer":"NA","code":"WAMW-0004703","wholesale":190},{"name":"RENXIT TAB","company":"RENATA","manufacturer":"NA","code":"WAMW-0004267","wholesale":228},{"name":"DIAMPA 25MG BANGLADESH","company":"RENATA","manufacturer":"NA","code":"WAMW-0004521","wholesale":120},{"name":"LOPHOS TAB","company":"RG","manufacturer":"NA","code":"WAMW-0002674","wholesale":380},{"name":"BONJILA GEL","company":"RICKET","manufacturer":"NA","code":"WAMW-0004029","wholesale":35},{"name":"AVONUM 25MG","company":"ROCK","manufacturer":"NA","code":"WAMW-0004554","wholesale":100},{"name":"PARASAV C","company":"RONALD","manufacturer":"NA","code":"WAMW-0004483","wholesale":90},{"name":"ONDASAV SYP","company":"RONALD","manufacturer":"NA","code":"WAMW-0004334","wholesale":70},{"name":"BROSAV 400","company":"RONALD","manufacturer":"NA","code":"WAMW-0004482","wholesale":370},{"name":"MECONEURO","company":"ROTEX","manufacturer":"NA","code":"WAMW-0004752","wholesale":65},{"name":"BIN BERRY SACHE","company":"RRYAN","manufacturer":"NA","code":"WAMW-0004628","wholesale":78},{"name":"MIF SACHE","company":"RRYAN","manufacturer":"NA","code":"WAMW-0003581","wholesale":110},{"name":"KETOROLAC RUSSI","company":"RUSSI","manufacturer":"NA","code":"WAMW-0002933","wholesale":120},{"name":"ACNOCLEAN SOAP","company":"SABROZ HEALTH CARE","manufacturer":"NA","code":"WAMW-0003786","wholesale":55},{"name":"ACNEY SOAP","company":"SABROZ HEALTH CARE","manufacturer":"NA","code":"WAMW-0003783","wholesale":55},{"name":"PREESAB LOTION","company":"SABROZ HEALTH CARE","manufacturer":"NA","code":"WAMW-0003788","wholesale":60},{"name":"HI TAR SOAP","company":"SABROZ HEALTH CARE","manufacturer":"NA","code":"WAMW-0003785","wholesale":55},{"name":"SELEX SOAP","company":"SABROZ HEALTH CARE","manufacturer":"NA","code":"WAMW-0003720","wholesale":55},{"name":"OILEX SOAP","company":"SABROZ HEALTH CARE","manufacturer":"NA","code":"WAMW-0003784","wholesale":55},{"name":"PREESAB SOAP","company":"SABROZ HEALTH CARE","manufacturer":"NA","code":"WAMW-0003787","wholesale":55},{"name":"AZOTEK 500","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0001914","wholesale":90},{"name":"ESTRANOR","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0001845","wholesale":160},{"name":"IMUNOL OIN","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0000408","wholesale":130},{"name":"DYSTRONE 10MG TAB","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0003140","wholesale":235},{"name":"MUSCOLIN 0.4","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0002402","wholesale":165},{"name":"CYPRODIOL TAB","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0000119","wholesale":140},{"name":"CAESAF 150 CAP","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0003139","wholesale":25},{"name":"HIVATE NASAL SPRAY","company":"SAFFRON","manufacturer":"NA","code":"WAMW-0000643","wholesale":200},{"name":"CLALOCIN LOTION","company":"SALAH KAKAR","manufacturer":"NA","code":"WAMW-0004198","wholesale":72},{"name":"TRIMETOP SYP","company":"SALAH KAKAR","manufacturer":"NA","code":"WAMW-0002944","wholesale":66},{"name":"KALCIDOL 0.5MG","company":"SALAH KAKAR","manufacturer":"NA","code":"WAMW-0004772","wholesale":51},{"name":"SK CETAM 60ML SYP","company":"SALAH KAKAR","manufacturer":"NA","code":"WAMW-0004200","wholesale":115},{"name":"SALMETHRINE 60ML LOTION","company":"SALAH KAKAR","manufacturer":"NA","code":"WAMW-0004028","wholesale":60},{"name":"LEUKORIX SACHE","company":"SALBON","manufacturer":"NA","code":"WAMW-0004606","wholesale":60},{"name":"PARASAL 120ML","company":"SALEH IHSAN","manufacturer":"NA","code":"WAMW-0003624","wholesale":40},{"name":"SALGIX 60ML","company":"SALEH IHSAN","manufacturer":"NA","code":"WAMW-0003625","wholesale":30},{"name":"ELEZO 150MG","company":"SAMI","manufacturer":"NA","code":"WAMW-0004601","wholesale":150},{"name":"BISLARI TAB","company":"SAMI","manufacturer":"NA","code":"WAMW-0001755","wholesale":120},{"name":"GRASIL 500MG","company":"SAMI","manufacturer":"NA","code":"WAMW-0002501","wholesale":95},{"name":"OXIDIL 250 IV","company":"SAMI","manufacturer":"NA","code":"WAMW-0001771","wholesale":51},{"name":"DICLOREP 50MG","company":"SAMI","manufacturer":"NA","code":"WAMW-0003749","wholesale":95},{"name":"ACTIM 10MG","company":"SAMI","manufacturer":"NA","code":"WAMW-0001336","wholesale":190},{"name":"RITHMO 250 SYP","company":"SAMI","manufacturer":"NA","code":"WAMW-0003740","wholesale":175},{"name":"ALKERIS 100MG","company":"SAMI","manufacturer":"NA","code":"WAMW-0001750","wholesale":95},{"name":"ROSERA 10MG","company":"SAMI","manufacturer":"NA","code":"WAMW-0000309","wholesale":70},{"name":"ACEMED 100MG","company":"SANDOZ","manufacturer":"NA","code":"WAMW-0004330","wholesale":72},{"name":"AZOMAX 500MG","company":"SANDOZ","manufacturer":"NA","code":"WAMW-0004067","wholesale":123},{"name":"LEVOFIN 250","company":"SANDOZ","manufacturer":"NA","code":"WAMW-0004731","wholesale":75},{"name":"OSPAMOX 125","company":"SANDOZ","manufacturer":"NA","code":"WAMW-0004730","wholesale":95},{"name":"OSPAMOX 250","company":"SANDOZ","manufacturer":"NA","code":"WAMW-0004729","wholesale":115},{"name":"AMARYL 3MG PAKISTANI","company":"SANOFI","manufacturer":"NA","code":"WAMW-0000048","wholesale":360},{"name":"AMARYL 2MG PAKISTANI","company":"SANOFI","manufacturer":"NA","code":"WAMW-0000047","wholesale":240},{"name":"NOSPA 40MG","company":"SANOFI","manufacturer":"NA","code":"WAMW-0000551","wholesale":68},{"name":"PLAVIX 75MG","company":"SANOFI","manufacturer":"NA","code":"WAMW-0000908","wholesale":440},{"name":"AMARYL 4MG TURKI","company":"SANOFI","manufacturer":"NA","code":"WAMW-0000052","wholesale":290},{"name":"FLAGYL 400","company":"SANOFI","manufacturer":"NA","code":"WAMW-0001143","wholesale":245},{"name":"GLUCANTIME 1.5G/5ML","company":"SANOFI","manufacturer":"NA","code":"WAMW-0004168","wholesale":520},{"name":"CO PLAVIX 75/75","company":"SANOFI","manufacturer":"NA","code":"WAMW-0000605","wholesale":160},{"name":"AMARYL 4MG PAKISTANI","company":"SANOFI","manufacturer":"NA","code":"WAMW-0000049","wholesale":420},{"name":"PHENERGON 120ML SYP","company":"SANOFI","manufacturer":"NA","code":"WAMW-0001238","wholesale":52},{"name":"FRISIUM 10MG","company":"SANOFI","manufacturer":"NA","code":"WAMW-0001225","wholesale":1500},{"name":"MAJEZIK 100MG","company":"SANOVEL PHARAMA","manufacturer":"NA","code":"WAMW-0004738","wholesale":90},{"name":"CLINDACIN GEL","company":"SANTE","manufacturer":"NA","code":"WAMW-0004037","wholesale":78},{"name":"BENCLIN GEL","company":"SANTE","manufacturer":"NA","code":"WAMW-0004038","wholesale":140},{"name":"OXYCHROM NASAL","company":"SANTE","manufacturer":"NA","code":"WAMW-0000502","wholesale":130},{"name":"OXYCHROM P NASAL","company":"SANTE","manufacturer":"NA","code":"WAMW-0004345","wholesale":140},{"name":"DEXOFLOX EYE","company":"SANTE","manufacturer":"NA","code":"WAMW-0003431","wholesale":70},{"name":"DEXATOB EAR","company":"SANTE","manufacturer":"NA","code":"WAMW-0003422","wholesale":60},{"name":"HAIRFIN 1MG","company":"SANTE","manufacturer":"NA","code":"WAMW-0002717","wholesale":140},{"name":"LOCHOL 20MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000389","wholesale":95},{"name":"PANTAZ 40MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000125","wholesale":100},{"name":"CLOPIRIN 75/75","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000871","wholesale":64},{"name":"SCICON MR 60MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000018","wholesale":168},{"name":"SCITIN 8MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000712","wholesale":94},{"name":"ASTHEVIN 10MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000070","wholesale":60},{"name":"KESTOR 10MG TAB","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0001311","wholesale":50},{"name":"PANTAZ 20MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000126","wholesale":60},{"name":"SCIPRIDE 50MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000295","wholesale":165},{"name":"SCITIN 16MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000691","wholesale":138},{"name":"SCIPRIDE 25MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000294","wholesale":125},{"name":"AMSTAN 10/160 MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000064","wholesale":142},{"name":"CO LIZYNO 20/12.5","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0001698","wholesale":72},{"name":"CO VALID 80/12.5","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0001140","wholesale":145},{"name":"SCIPRAM 10MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000276","wholesale":90},{"name":"AMSTAN 5/160 MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000065","wholesale":110},{"name":"SCIMOX 400MG","company":"SCILIFE","manufacturer":"NA","code":"WAMW-0000129","wholesale":97},{"name":"SPIROMIDE 40MG","company":"SEARLE","manufacturer":"NA","code":"WAMW-0000907","wholesale":123},{"name":"XADINE 60MG","company":"SEARLE","manufacturer":"NA","code":"WAMW-0004280","wholesale":65},{"name":"NUBEROL FORTE","company":"SEARLE","manufacturer":"NA","code":"WAMW-0000382","wholesale":55},{"name":"EXTOR 10/160","company":"SEARLE","manufacturer":"NA","code":"WAMW-0000164","wholesale":180},{"name":"OMIXIM 400","company":"SEARLE","manufacturer":"NA","code":"WAMW-0004724","wholesale":115},{"name":"LUMARK 500","company":"SEARLE","manufacturer":"NA","code":"WAMW-0001332","wholesale":635},{"name":"NUBEROL TAB","company":"SEARLE","manufacturer":"NA","code":"WAMW-0001258","wholesale":245},{"name":"METROZIN 200MG","company":"SEARLE","manufacturer":"NA","code":"WAMW-0000652","wholesale":100},{"name":"TRAMAL 50 CAP","company":"SEARLE","manufacturer":"NA","code":"WAMW-0002931","wholesale":85},{"name":"TRYPTANOL 25MG","company":"SEARLE","manufacturer":"NA","code":"WAMW-0001256","wholesale":120},{"name":"CALAN 80MG","company":"SEARLE","manufacturer":"NA","code":"WAMW-0000095","wholesale":145},{"name":"RELISPA INJ","company":"SEARLE","manufacturer":"NA","code":"WAMW-0002639","wholesale":300},{"name":"SUSTAC 2.6MG","company":"SEARLE","manufacturer":"NA","code":"WAMW-0000302","wholesale":95},{"name":"H DON 120ML","company":"SEHAT HAYAT","manufacturer":"NA","code":"WAMW-0004084","wholesale":43},{"name":"H CYPH 120ML","company":"SEHAT HAYAT","manufacturer":"NA","code":"WAMW-0003601","wholesale":38},{"name":"AMYLINE 25","company":"SEIZA RAZEA","manufacturer":"NA","code":"WAMW-0001966","wholesale":85},{"name":"CESTONIL PLUS 120ML","company":"SEIZA RAZEA","manufacturer":"NA","code":"WAMW-0004257","wholesale":85},{"name":"DIAMICRON 80MG","company":"SERVIER","manufacturer":"NA","code":"WAMW-0000791","wholesale":105},{"name":"VASTAREL MR","company":"SERVIER","manufacturer":"NA","code":"WAMW-0000604","wholesale":260},{"name":"DAFLON 500","company":"SERVIER","manufacturer":"NA","code":"WAMW-0000788","wholesale":345},{"name":"GINKOBA CAPSULE","company":"SEVEN SEAS","manufacturer":"NA","code":"WAMW-0003238","wholesale":140},{"name":"MITS 15MG","company":"SHAIGAN","manufacturer":"NA","code":"WAMW-0000154","wholesale":145},{"name":"GLYKIN 250","company":"SHAIGAN","manufacturer":"NA","code":"WAMW-0002950","wholesale":30},{"name":"BROTIN TAB","company":"SHAIGAN","manufacturer":"NA","code":"WAMW-0000153","wholesale":235},{"name":"DIASAR 5/160","company":"SHAIGAN","manufacturer":"NA","code":"WAMW-0000583","wholesale":142},{"name":"SODAMINT TAB","company":"SHAREX","manufacturer":"NA","code":"WAMW-0003333","wholesale":95},{"name":"FLEXOSONE ALLERGY","company":"SHAZ00 SPL","manufacturer":"NA","code":"WAMW-0002220","wholesale":165},{"name":"LOTENSE 25MG","company":"SHAZ00 ZAKA","manufacturer":"NA","code":"WAMW-0001794","wholesale":55},{"name":"ZESPRA","company":"SHAZOO SPL","manufacturer":"NA","code":"WAMW-0004649","wholesale":95},{"name":"NAZE 0.5MG","company":"SHAZOO SPL","manufacturer":"NA","code":"WAMW-0001222","wholesale":115},{"name":"ACE BEX CAP","company":"SHAZOO SPL","manufacturer":"NA","code":"WAMW-0003334","wholesale":92},{"name":"OFLEXER EYE","company":"SHAZOO ZAKA","manufacturer":"NA","code":"WAMW-0004648","wholesale":55},{"name":"CELOXIB 200","company":"SHAZOO ZAKA","manufacturer":"NA","code":"WAMW-0004113","wholesale":90},{"name":"BONE CARE C","company":"SHAZOO ZAKA","manufacturer":"NA","code":"WAMW-0003591","wholesale":135},{"name":"BAMTEL","company":"SHAZOO ZAKA","manufacturer":"NA","code":"WAMW-0001744","wholesale":185},{"name":"ESLOPRESS 10MG","company":"SHAZOO ZAKA","manufacturer":"NA","code":"WAMW-0003093","wholesale":60},{"name":"PAROTIN 20MG","company":"SHAZOO ZAKA","manufacturer":"NA","code":"WAMW-0000354","wholesale":60},{"name":"AROCOF D","company":"SHMZ","manufacturer":"NA","code":"WAMW-0004154","wholesale":40},{"name":"PAROXIMA CR 12.5MG","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004519","wholesale":170},{"name":"VALICA G PLUS","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004370","wholesale":235},{"name":"SIALIS 5 MG","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004397","wholesale":71},{"name":"AKTTION TAB","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004378","wholesale":36},{"name":"FAVEMINE 50TAB","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004373","wholesale":195},{"name":"HEMOREN OIN","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0003638","wholesale":100},{"name":"CEIPRO VITA","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0001171","wholesale":33},{"name":"FEMOZOLE 2.5 SIGNATURE","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0003620","wholesale":110},{"name":"ROVATIN F TAB","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004148","wholesale":155},{"name":"SIALIS 20MG","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004377","wholesale":90},{"name":"PAROXIMA CR25MG","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004520","wholesale":180},{"name":"VALICA G TAB","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004369","wholesale":210},{"name":"PANTONIUM 40MG IV","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0003918","wholesale":30},{"name":"SIALIS 1OMG","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004376","wholesale":80},{"name":"COLIMEX DROP","company":"SIGNATURE","manufacturer":"NA","code":"WAMW-0004789","wholesale":49},{"name":"SLONA 2MG","company":"SILCO","manufacturer":"NA","code":"WAMW-0003380","wholesale":85},{"name":"SIS PRED 80","company":"SISODIA","manufacturer":"NA","code":"WAMW-0004636","wholesale":70},{"name":"SISPRIN A75 FORTE CAP","company":"SISODIA","manufacturer":"NA","code":"WAMW-0004456","wholesale":55},{"name":"AMISIS 500","company":"SISODIA","manufacturer":"NA","code":"WAMW-0004452","wholesale":30},{"name":"PREDIS DROP","company":"SISODIA","manufacturer":"NA","code":"WAMW-0004455","wholesale":37},{"name":"GINKOSIS SYP","company":"SISODIA","manufacturer":"NA","code":"WAMW-0004635","wholesale":66},{"name":"CARA 20MG","company":"SJG","manufacturer":"NA","code":"WAMW-0002946","wholesale":375},{"name":"BUSRON","company":"SJG","manufacturer":"NA","code":"WAMW-0002947","wholesale":195},{"name":"THIOLAX CAP 4MG","company":"SJG","manufacturer":"NA","code":"WAMW-0000017","wholesale":230},{"name":"CARA 10MG","company":"SJG","manufacturer":"NA","code":"WAMW-0004394","wholesale":255},{"name":"REELIFE","company":"SK+F","manufacturer":"NA","code":"WAMW-0001348","wholesale":150},{"name":"CARDOPLUS","company":"SK+F","manufacturer":"NA","code":"WAMW-0001347","wholesale":145},{"name":"PRED 5 TAB","company":"SK+F","manufacturer":"NA","code":"WAMW-0001345","wholesale":298},{"name":"LINDAMAX 300MG","company":"SK+F","manufacturer":"NA","code":"WAMW-0003293","wholesale":330},{"name":"CARBAZIN 200MG TAB","company":"SK+F","manufacturer":"NA","code":"WAMW-0002158","wholesale":180},{"name":"SLIM LAC 120ML","company":"SLIM","manufacturer":"NA","code":"WAMW-0004702","wholesale":60},{"name":"SNOBIS 2.5MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004497","wholesale":34},{"name":"SNOPRIDE 25MG TAB","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003696","wholesale":64},{"name":"SNORYL 3MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004404","wholesale":106},{"name":"SNOCOBAL 500MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004416","wholesale":97},{"name":"SNOREST 0.25MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004498","wholesale":60},{"name":"SNOVIT C TAB","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004501","wholesale":48},{"name":"SNOPLAT PLUS 75/75","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003697","wholesale":64},{"name":"EXSAR 5/80MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004512","wholesale":76},{"name":"SNODOM 120 ML SYRUP","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003685","wholesale":38},{"name":"SNOPROX 500MG TAB","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003688","wholesale":75},{"name":"SNOREST 0.50MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004499","wholesale":70},{"name":"EXSAR PLUS 160/10/12.5MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003699","wholesale":110},{"name":"SNORYL 4MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004405","wholesale":141},{"name":"INDOMEB 25MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003687","wholesale":34},{"name":"SNOGAB 100MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004409","wholesale":45},{"name":"SNOCLAR 500MG TAB","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003703","wholesale":200},{"name":"EXSAR PLUS 160/5/25MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004413","wholesale":110},{"name":"SNODIFINE M TAB","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004513","wholesale":93},{"name":"SNOBALIN 75MG CAP","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003815","wholesale":122},{"name":"SNORYL 2MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004403","wholesale":68},{"name":"SNOPEROL FORTE","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0001063","wholesale":37},{"name":"EXSAR 5/160","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004414","wholesale":98},{"name":"SNOFAM 10 MG SUSP","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003684","wholesale":38},{"name":"SNOVAL 250MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004408","wholesale":85},{"name":"SNOVIT H","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0001068","wholesale":75},{"name":"NOSPIN PLUS (NOSPA)","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003689","wholesale":41},{"name":"SNOBIS 5MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004415","wholesale":54},{"name":"SNOBUFEN 100 SYP","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003705","wholesale":43},{"name":"NORFOX 400","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004407","wholesale":85},{"name":"EXSAR 10/160","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004410","wholesale":103},{"name":"SNOBUFEN DS SYP","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003706","wholesale":50},{"name":"SNORYL 1MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004402","wholesale":35},{"name":"SNOCON SUSPENSION","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0003683","wholesale":49},{"name":"SNOMET 500MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004441","wholesale":27},{"name":"EXSAR PLUS 160/10/25MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004411","wholesale":115},{"name":"EXSAR PLUS 160/5/12.5MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004412","wholesale":102},{"name":"SNOSPA 40MG","company":"SNOW PHARMA","manufacturer":"NA","code":"WAMW-0004500","wholesale":45},{"name":"VENALAX SR 75","company":"STANDPHARMA","manufacturer":"NA","code":"WAMW-0000589","wholesale":170},{"name":"TESTOFIN M","company":"STANDPHARMA","manufacturer":"NA","code":"WAMW-0002843","wholesale":265},{"name":"NIRVANOL 5MG","company":"STANDPHARMA","manufacturer":"NA","code":"WAMW-0003218","wholesale":43},{"name":"UNICID SYP","company":"SULAIMAN RAHIMEE","manufacturer":"NA","code":"WAMW-0002594","wholesale":30},{"name":"EFFINE ( ZINC SYP )","company":"SUN PHARMA","manufacturer":"NA","code":"WAMW-0004446","wholesale":33},{"name":"SUNMOLE  500","company":"SUN PHARMA","manufacturer":"NA","code":"WAMW-0004277","wholesale":175},{"name":"SE COUG","company":"SUN PHARMA","manufacturer":"NA","code":"WAMW-0003941","wholesale":39},{"name":"LOPROT IV","company":"SURGE","manufacturer":"NA","code":"WAMW-0004578","wholesale":55},{"name":"ESPIDONE 3MG","company":"SURGE","manufacturer":"NA","code":"WAMW-0004273","wholesale":235},{"name":"ATOXAN TAB","company":"SWISS","manufacturer":"NA","code":"WAMW-0003166","wholesale":145},{"name":"NEUROSYM PLUS","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0003666","wholesale":298},{"name":"SYMTOP D TAB","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0003667","wholesale":175},{"name":"SYM 4G","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0003659","wholesale":195},{"name":"PIRASYM SYP","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0004129","wholesale":177},{"name":"SYMTOP IR","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0003870","wholesale":281},{"name":"DEBGONE M","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0003662","wholesale":144},{"name":"MAXINAC SP","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0003665","wholesale":180},{"name":"AMINOSYM SYP","company":"SYMBIOSIS","manufacturer":"NA","code":"WAMW-0004596","wholesale":106},{"name":"ROSUTUS 20MG","company":"SYNCOM","manufacturer":"NA","code":"WAMW-0004545","wholesale":90},{"name":"TINIFIL 500","company":"SYNMEDIC","manufacturer":"NA","code":"WAMW-0003231","wholesale":20},{"name":"SYNMARINE CREAM","company":"SYNOKEM","manufacturer":"NA","code":"WAMW-0003475","wholesale":150},{"name":"ESMOSYN 40MG","company":"SYNOKEM","manufacturer":"NA","code":"WAMW-0004096","wholesale":153},{"name":"IZI PLUS TAB","company":"SYNOKEM","manufacturer":"NA","code":"WAMW-0004093","wholesale":117},{"name":"PENTOKEM D CAP","company":"SYNOKEM","manufacturer":"NA","code":"WAMW-0004095","wholesale":125},{"name":"VADIL 25MG","company":"TABROS","manufacturer":"NA","code":"WAMW-0002548","wholesale":100},{"name":"FOCIN 500 CAP","company":"TABROS","manufacturer":"NA","code":"WAMW-0000318","wholesale":100},{"name":"DURAGESIC FORTE","company":"TABROS","manufacturer":"NA","code":"WAMW-0004717","wholesale":140},{"name":"NEBIVOL 10MG","company":"TABROS","manufacturer":"NA","code":"WAMW-0003154","wholesale":135},{"name":"METOSPASMYL","company":"TABROS","manufacturer":"NA","code":"WAMW-0004668","wholesale":265},{"name":"VALTEC 40","company":"TABROS","manufacturer":"NA","code":"WAMW-0002439","wholesale":110},{"name":"CO VALTEC 80/12.5","company":"TABROS","manufacturer":"NA","code":"WAMW-0001212","wholesale":190},{"name":"VADIL 12.5MG","company":"TABROS","manufacturer":"NA","code":"WAMW-0002596","wholesale":140},{"name":"NEBIVOL 2.5MG","company":"TABROS","manufacturer":"NA","code":"WAMW-0003555","wholesale":70},{"name":"AMYGRA","company":"TABROS","manufacturer":"NA","code":"WAMW-0003838","wholesale":145},{"name":"RAST 10MG","company":"TABROS","manufacturer":"NA","code":"WAMW-0000728","wholesale":100},{"name":"VALTEC 10/160 AM","company":"TABROS","manufacturer":"NA","code":"WAMW-0001272","wholesale":290},{"name":"VADIL 3.125","company":"TABROS","manufacturer":"NA","code":"WAMW-0002553","wholesale":90},{"name":"RAPICORT 5MG","company":"TABROS","manufacturer":"NA","code":"WAMW-0004632","wholesale":215},{"name":"VALTEC 160","company":"TABROS","manufacturer":"NA","code":"WAMW-0001147","wholesale":230},{"name":"FOCIN ULTRA SACHE","company":"TABROS","manufacturer":"NA","code":"WAMW-0000011","wholesale":200},{"name":"FUNGIZOLE V","company":"TORQUE","manufacturer":"NA","code":"WAMW-0002034","wholesale":56},{"name":"HYDROGEN PEROXIDE","company":"TRAJMIR","manufacturer":"NA","code":"WAMW-0002886","wholesale":75},{"name":"GAIN UP POWDER","company":"TURKEY","manufacturer":"NA","code":"WAMW-0002294","wholesale":150},{"name":"NEURON TAB","company":"TURKEY","manufacturer":"NA","code":"WAMW-0003818","wholesale":148},{"name":"MAGNESIUM  SOFTGEL","company":"TURKEY","manufacturer":"NA","code":"WAMW-0004791","wholesale":400},{"name":"SIMKIDS DROP","company":"TURKEY","manufacturer":"NA","code":"WAMW-0004617","wholesale":55},{"name":"LANSOTER 30MG","company":"TURKEY","manufacturer":"NA","code":"WAMW-0004179","wholesale":135},{"name":"EZEFLO 0.4","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0004065","wholesale":144},{"name":"POLOPAN LSR","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0000307","wholesale":252},{"name":"SULVIN 25MG","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0004000","wholesale":90},{"name":"MEDSTA F","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0001510","wholesale":126},{"name":"FOLUZEN CAP","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0000315","wholesale":100},{"name":"FOLUZEN-O","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0001021","wholesale":126},{"name":"AMOLITE LM","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0000057","wholesale":200},{"name":"GLIMFEX 3MG","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0001994","wholesale":65},{"name":"POLOPAN 40MG","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0003490","wholesale":153},{"name":"MAXITIL 200","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0001174","wholesale":198},{"name":"FARVIT 75MG","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0003959","wholesale":144},{"name":"SAFE 3 KIT","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0001020","wholesale":119},{"name":"U ARAM 10MG","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0001022","wholesale":158},{"name":"MEPZIP L","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0000428","wholesale":252},{"name":"GLIMFEX 2MG","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0001199","wholesale":50},{"name":"FLEXIHEL DN","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0003386","wholesale":220},{"name":"POLOPAN DSR","company":"UNIMAX","manufacturer":"NA","code":"WAMW-0000352","wholesale":195},{"name":"TURK SARI ORANGE","company":"UNITED TURKY","manufacturer":"NA","code":"WAMW-0001396","wholesale":43},{"name":"GROOT MANGO","company":"UNITED TURKY","manufacturer":"NA","code":"WAMW-0000898","wholesale":430},{"name":"GROOT ORANGE","company":"UNITED TURKY","manufacturer":"NA","code":"WAMW-0001394","wholesale":430},{"name":"HYPORIDE LA","company":"USAWA","manufacturer":"NA","code":"WAMW-0002281","wholesale":95},{"name":"CAZAP 200","company":"USAWA","manufacturer":"NA","code":"WAMW-0002283","wholesale":115},{"name":"PRO ONE GEL","company":"VALOR","manufacturer":"NA","code":"WAMW-0001866","wholesale":65},{"name":"TRI MELASIN CR","company":"VALOR","manufacturer":"NA","code":"WAMW-0002751","wholesale":105},{"name":"EPILA CREAM","company":"VALOR","manufacturer":"NA","code":"WAMW-0001862","wholesale":535},{"name":"DIFSOM EYE DROP","company":"VEGA","manufacturer":"NA","code":"WAMW-0001835","wholesale":33},{"name":"BOITEN 500","company":"VELLONA","manufacturer":"NA","code":"WAMW-0003643","wholesale":117},{"name":"SYLKEN GLYCIRINE 55G","company":"WAQAR","manufacturer":"NA","code":"WAMW-0002106","wholesale":17},{"name":"SYLKEN GLYCIRINE 100G","company":"WAQAR","manufacturer":"NA","code":"WAMW-0002108","wholesale":26},{"name":"SYLKEN GLYCIRINE 250","company":"WAQAR","manufacturer":"NA","code":"WAMW-0002107","wholesale":55},{"name":"MALVIT 200ML","company":"WAZIRI","manufacturer":"NA","code":"WAMW-0004718","wholesale":32},{"name":"URO GINKO PLUS","company":"WAZIRI","manufacturer":"NA","code":"WAMW-0004675","wholesale":35},{"name":"MOXIWELL D","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004458","wholesale":65},{"name":"TOBRAWELL D","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004457","wholesale":65},{"name":"TAMSUWELL 0.4 CAP","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004429","wholesale":150},{"name":"GLIMWELL PM2 TAB","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004431","wholesale":245},{"name":"PAROXINA CR 12.5","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004426","wholesale":170},{"name":"OLAWELL 10MG","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004433","wholesale":110},{"name":"LEVETA 500","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004435","wholesale":128},{"name":"DOXPIN 25MG","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004735","wholesale":255},{"name":"WELLSPRIN GOLD","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004460","wholesale":290},{"name":"OLAWELL 5MG","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004434","wholesale":90},{"name":"ROSUWELL GOLD","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004620","wholesale":290},{"name":"TORSEWELL S TAB","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004438","wholesale":295},{"name":"DAPAVER 5MG","company":"WELLONA PHARMA","manufacturer":"NA","code":"WAMW-0004430","wholesale":150},{"name":"WELLKACID","company":"WELL QUALITY","manufacturer":"NA","code":"WAMW-0004480","wholesale":84},{"name":"OLANZIA 10MG","company":"WERRICK","manufacturer":"NA","code":"WAMW-0001274","wholesale":80},{"name":"EZIDAY 50MG","company":"WERRICK","manufacturer":"NA","code":"WAMW-0001198","wholesale":145},{"name":"MONITOR 5MG","company":"WERRICK","manufacturer":"NA","code":"WAMW-0000815","wholesale":80},{"name":"ANTIFLAM 50MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0002374","wholesale":44},{"name":"BYVOL 5MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004492","wholesale":58},{"name":"MOTROL 25MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004496","wholesale":68},{"name":"RELSPASM 4MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0002170","wholesale":145},{"name":"BONATE D 70+70MCG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004158","wholesale":195},{"name":"X BONE 1MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004488","wholesale":210},{"name":"SELECO 200MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0002030","wholesale":90},{"name":"ANTIFLAM 75MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0002029","wholesale":100},{"name":"CLOVRIN SR","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004684","wholesale":86},{"name":"ZEECIN 250","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004156","wholesale":65},{"name":"FEXIBIL 10MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004219","wholesale":60},{"name":"GLYSET 4MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0000867","wholesale":140},{"name":"BYVOL 2.5 MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004493","wholesale":37},{"name":"ELLETRA 100","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004490","wholesale":220},{"name":"QINK 200MG CAP","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004160","wholesale":103},{"name":"CHEER UP 10MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0000880","wholesale":188},{"name":"IPRIDE SR 150MG CAP","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004221","wholesale":225},{"name":"RANKER 250","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004514","wholesale":100},{"name":"XYSTER 500MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004494","wholesale":80},{"name":"ELLETRA 50MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004491","wholesale":210},{"name":"PERLIT SR 90MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004489","wholesale":60},{"name":"AIDRA 20MG TAB","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004157","wholesale":236},{"name":"X BONE 0.5MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0002028","wholesale":157},{"name":"BONATE OW 70MG","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0004159","wholesale":135},{"name":"ZEECIN 500","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0003901","wholesale":55},{"name":"FLEXI PLUS 75MG TAB","company":"WILSHARE","manufacturer":"NA","code":"WAMW-0002618","wholesale":120},{"name":"TELERGIN TAB","company":"WILSONS","manufacturer":"NA","code":"WAMW-0000721","wholesale":25},{"name":"POLYPEP TAB","company":"WILSONS","manufacturer":"NA","code":"WAMW-0004676","wholesale":145},{"name":"DIAGESIC P","company":"WILSONS","manufacturer":"NA","code":"WAMW-0001209","wholesale":600},{"name":"GINKOWISE SYP","company":"WISE","manufacturer":"NA","code":"WAMW-0002144","wholesale":153},{"name":"MYNOCID 240ML","company":"WISE","manufacturer":"NA","code":"WAMW-0004019","wholesale":80},{"name":"CITRA 5OMG","company":"WISE","manufacturer":"NA","code":"WAMW-0004018","wholesale":135},{"name":"LOZAPIN 10MG","company":"WISE","manufacturer":"NA","code":"WAMW-0000379","wholesale":174},{"name":"RESCORTISONE 100MG","company":"XRES CURES","manufacturer":"NA","code":"WAMW-0004688","wholesale":22},{"name":"ZECUF SYP","company":"YASHFEEN","manufacturer":"NA","code":"WAMW-0004092","wholesale":105},{"name":"ZECUF LOZENGES","company":"YASHFEEN","manufacturer":"NA","code":"WAMW-0003872","wholesale":72},{"name":"ATENOLOL 100MG","company":"ZAFA","manufacturer":"NA","code":"WAMW-0003323","wholesale":44},{"name":"ZODIP 5MG","company":"ZAFA","manufacturer":"NA","code":"WAMW-0002165","wholesale":28},{"name":"CARDACE H","company":"ZAFA","manufacturer":"NA","code":"WAMW-0003745","wholesale":27},{"name":"BENZIBIOTIC 1.2M","company":"ZAFA","manufacturer":"NA","code":"WAMW-0001046","wholesale":60},{"name":"CP ZAF 500MG","company":"ZAFA","manufacturer":"NA","code":"WAMW-0004209","wholesale":55},{"name":"CARDACE 10MG","company":"ZAFA","manufacturer":"NA","code":"WAMW-0003744","wholesale":43},{"name":"FIRMOFOS 70MG","company":"ZAFA","manufacturer":"NA","code":"WAMW-0004208","wholesale":80},{"name":"ASTHOTIFEN TAB","company":"ZAFA","manufacturer":"NA","code":"WAMW-0001402","wholesale":45},{"name":"LABETILOL TAB","company":"ZAFA","manufacturer":"NA","code":"WAMW-0001049","wholesale":105},{"name":"ZAFRIDATE 100MG","company":"ZAFA","manufacturer":"NA","code":"WAMW-0001398","wholesale":90},{"name":"MIRTAZEF 30MG","company":"ZAFA","manufacturer":"NA","code":"WAMW-0004106","wholesale":355},{"name":"FAMILA INJ","company":"ZAFA","manufacturer":"NA","code":"WAMW-0001051","wholesale":60},{"name":"NEO K TAB","company":"ZAFA","manufacturer":"NA","code":"WAMW-0001057","wholesale":40},{"name":"FAMILA TAB","company":"ZAFA","manufacturer":"NA","code":"WAMW-0001052","wholesale":24},{"name":"CHX GEL","company":"ZAFA","manufacturer":"NA","code":"WAMW-0004109","wholesale":45},{"name":"ZEMPRO PLUS","company":"ZAFRAN PHARMA","manufacturer":"NA","code":"WAMW-0004313","wholesale":74},{"name":"CURE TAPE","company":"ZAKAR SHIRIF","manufacturer":"NA","code":"WAMW-0003986","wholesale":60},{"name":"ANTIPAS HAEMORHOID","company":"ZAMEN","manufacturer":"NA","code":"WAMW-0002713","wholesale":77},{"name":"CLINDA PLUS GEL","company":"ZAMEN","manufacturer":"NA","code":"WAMW-0003295","wholesale":77},{"name":"MAXFORMIN","company":"ZAMEN","manufacturer":"NA","code":"WAMW-0001416","wholesale":110},{"name":"ZENDON 8MG","company":"ZENON","manufacturer":"NA","code":"WAMW-0004338","wholesale":80},{"name":"ZENDON D DROP","company":"ZENON","manufacturer":"NA","code":"WAMW-0004630","wholesale":45},{"name":"ZE CRAN SACHETS","company":"ZESHAN PHARMA","manufacturer":"NA","code":"WAMW-0004098","wholesale":41}];
+
+  const productSearch = document.getElementById("productSearch");
+  const companyFilter = document.getElementById("companyFilter");
+  const productTableBody = document.getElementById("productTableBody");
+  const catalogCount = document.getElementById("catalogCount");
+  const emptyState = document.getElementById("emptyState");
+
+  const companies = [...new Set(products.map(p => p.company).filter(Boolean))].sort((a,b) => a.localeCompare(b));
+  companies.forEach(company => {
+    const option = document.createElement("option");
+    option.value = company;
+    option.textContent = company;
+    companyFilter.appendChild(option);
+  });
+
+  function renderProducts() {
+    const query = productSearch.value.trim().toLowerCase();
+    const company = companyFilter.value;
+
+    const filtered = products.filter(p => {
+      const haystack = [p.name, p.company, p.manufacturer, p.code].join(" ").toLowerCase();
+      return (!query || haystack.includes(query)) && (!company || p.company === company);
+    });
+
+    productTableBody.innerHTML = "";
+
+    filtered.forEach(p => {
+      const tr = document.createElement("tr");
+      const encodedName = encodeURIComponent(p.name);
+      const price = (p.wholesale !== null && p.wholesale !== undefined && p.wholesale !== "")
+        ? p.wholesale
+        : "On request";
+      tr.innerHTML = `
+        <td><span class="product-name">${escapeHtml(p.name)}</span></td>
+        <td>${escapeHtml(p.company || "—")}</td>
+        <td>${escapeHtml(p.manufacturer || "—")}</td>
+        <td>${escapeHtml(p.code || "—")}</td>
+        <td class="price-cell">${escapeHtml(String(price))}</td>
+        <td>
+          <a class="order-small"
+             href="https://wa.me/93771718350?text=Hello%20Wazeerzy,%20I%20am%20interested%20in%20${encodedName}."
+             target="_blank" rel="noopener">WhatsApp</a>
+        </td>`;
+      productTableBody.appendChild(tr);
+    });
+
+    catalogCount.textContent = `${filtered.length} product${filtered.length === 1 ? "" : "s"} shown`;
+    emptyState.style.display = filtered.length ? "none" : "block";
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  productSearch.addEventListener("input", renderProducts);
+  companyFilter.addEventListener("change", renderProducts);
+  renderProducts();
+
+</script>
+
 </body>
 </html>
