@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wazeerzy Medicine Wholesale - Wholesale medicine and healthcare product supply for pharmacies and healthcare businesses across Afghanistan.">
+  <meta name="keywords" content="Wazeerzy, medicine wholesale, pharmaceutical wholesale, Afghanistan, pharmacy supply, medicines">
+  <meta name="author" content="Wazeerzy Medicine Wholesale">
+  <title>Wazeerzy Medicine Wholesale | Afghanistan</title>
+
+  <style>
+    :root {
+      --blue: #17639a;
+      --blue-dark: #104d7c;
+      --orange: #ff4b24;
+      --orange-dark: #e63d1b;
+      --text: #172638;
+      --muted: #667383;
+      --light: #f5f8fb;
+      --white: #ffffff;
+      --border: #e1e8ef;
+      --shadow: 0 10px 30px rgba(15, 50, 80, 0.10);
+      --radius: 18px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+    }
+
+    .header-inner {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 230px;
+    }
+
+    .brand img {
+      width: 68px;
+      height: 68px;
+      object-fit: contain;
+    }
+
+    .brand-text strong {
+      display: block;
+      color: var(--blue);
+      font-size: 25px;
+      line-height: 1.05;
+      letter-spacing: .5px;
+    }
+
+    .brand-text span {
+      display: block;
+      color: #666;
+      font-size: 14px;
+      letter-spacing: .8px;
+      margin-top: 5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-weight: 700;
+      padding: 10px 13px;
+      border-radius: 10px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--blue);
+      background: #edf5fb;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: var(--blue);
+      color: white;
+      font-size: 25px;
+      width: 46px;
+      height: 42px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      padding: 90px 0 85px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: -1px;
+    }
+
+    .hero h1 span { color: #ffd0c4; }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 20px;
+      color: rgba(255,255,255,.92);
+      margin: 0 0 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 800;
+      border: 2px solid transparent;
+      transition: .2s ease;
+      cursor: pointer;
+    }
+
+    .btn-orange {
+      background: var(--orange);
+      color: white;
+    }
+
+    .btn-orange:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+    .btn-white {
+      background: white;
+      color: var(--blue-dark);
+    }
+
+    .btn-white:hover { background: #f0f6fa; transform: translateY(-1px); }
+
+    .hero-card {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(5px);
+    }
+
+    .hero-card h3 { margin-top: 0; font-size: 23px; }
+
+    .hero-card ul {
+      padding: 0;
+      margin: 20px 0 0;
+      list-style: none;
+    }
+
+    .hero-card li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    .hero-card li:last-child { border-bottom: 0; }
+
+    /* Sections */
+    section { padding: 78px 0; }
+
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.15;
+      color: var(--blue-dark);
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* Stats */
+    .stats {
+      margin-top: -36px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .stat {
+      background: white;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: 15px;
+      text-align: center;
+      padding: 23px 15px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--blue);
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .stat span { color: var(--muted); font-size: 14px; }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: var(--light);
+      border-left: 5px solid var(--orange);
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+
+    .about-box h3 { margin-top: 0; color: var(--blue-dark); font-size: 23px; }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      padding-left: 28px;
+      position: relative;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--orange);
+      font-weight: 900;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 27px;
+      background: white;
+      box-shadow: 0 5px 20px rgba(20,60,90,.05);
+      transition: .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #eaf4fb;
+      color: var(--blue);
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 { margin: 0 0 8px; color: var(--blue-dark); }
+    .card p { color: var(--muted); margin: 0; }
+
+    /* Products */
+    #products { background: var(--light); }
+
+    .product-note {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 25px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .category {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 22px 18px;
+      text-align: center;
+      font-weight: 800;
+      color: var(--blue-dark);
+    }
+
+    .category span {
+      display: block;
+      font-size: 29px;
+      margin-bottom: 7px;
+    }
+
+    /* Price */
+    .price-box {
+      max-width: 850px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #f7fbfe, #fff);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .price-box p { color: var(--muted); }
+
+    /* FAQ */
+    .faq {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin: 12px 0;
+      padding: 17px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: var(--blue-dark);
+    }
+
+    details p { color: var(--muted); margin-bottom: 0; }
+
+    /* Contact */
+    #contact { background: var(--light); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      align-items: flex-start;
+    }
+
+    .contact-item .icon {
+      flex: 0 0 48px;
+      width: 48px;
+      height: 48px;
+      margin: 0;
+      font-size: 21px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--blue-dark);
+      margin-bottom: 3px;
+    }
+
+    .contact-item span,
+    .contact-item a { color: var(--muted); }
+
+    .contact-item a:hover { color: var(--orange); }
+
+    .whatsapp-box {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: white;
+      border-radius: var(--radius);
+      padding: 35px;
+    }
+
+    .whatsapp-box h3 { font-size: 28px; margin-top: 0; }
+
+    .whatsapp-box p { color: rgba(255,255,255,.88); }
+
+    /* Footer */
+    footer {
+      background: #0d273d;
+      color: white;
+      padding: 45px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 { margin-top: 0; }
+    footer p, footer a { color: rgba(255,255,255,.70); }
+    footer a:hover { color: white; }
+
+    .footer-bottom {
+      margin-top: 35px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.55);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-grid,
+      .contact-grid { grid-template-columns: 1fr; }
+
+      .cards { grid-template-columns: repeat(2, 1fr); }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .header-inner { min-height: 72px; }
+      .menu-btn { display: block; }
+      nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72px;
+        background: white;
+        padding: 12px 4%;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+      nav.open { display: flex; flex-direction: column; align-items: stretch; }
+      nav a { text-align: center; }
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 58px 0; }
+      .brand img { width: 55px; height: 55px; }
+      .brand-text strong { font-size: 20px; }
+      .brand-text span { font-size: 11px; }
+      .hero { padding: 65px 0; }
+      .hero h1 { font-size: 39px; }
+      .hero p { font-size: 17px; }
+      .cards { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .price-box { padding: 28px 20px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Wazeerzy Medicine Wholesale Home">
+      <!-- Keep your existing logo file in the same GitHub repository and name it logo.png -->
+      <img src="logo.png" alt="Wazeerzy Medicine Wholesale Logo">
+      <div class="brand-text">
+        <strong>WAZEERZY</strong>
+        <span>MEDICINE WHOLESALE</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#price-list">Price List</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow" style="color:#ffd0c4;">Wholesale Healthcare Supply</div>
+        <h1>WAZEERZY<br><span>MEDICINE WHOLESALE</span></h1>
+        <p>
+          Wholesale medicine and healthcare product supply for pharmacies,
+          wholesalers, and healthcare businesses across Afghanistan.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-orange"
+             href="https://wa.me/93771718350?text=Hello%20Wazeerzy%20Medicine%20Wholesale,%20I%20would%20like%20to%20make%20an%20inquiry."
+             target="_blank" rel="noopener">
+            📱 Order on WhatsApp
+          </a>
+          <a class="btn btn-white" href="#contact">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Our Wholesale Focus</h3>
+        <ul>
+          <li>💊 Medicines and healthcare products</li>
+          <li>🏪 Supply for pharmacies</li>
+          <li>📦 Bulk and wholesale orders</li>
+          <li>🚚 Distribution and customer support</li>
+          <li>🇦🇫 Serving customers across Afghanistan</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <div class="stats">
+    <div class="container stats-grid">
+      <div class="stat"><strong>Wholesale</strong><span>Medicine Supply</span></div>
+      <div class="stat"><strong>Pharmacies</strong><span>Business Customers</span></div>
+      <div class="stat"><strong>Bulk Orders</strong><span>Wholesale Inquiries</span></div>
+      <div class="stat"><strong>Afghanistan</strong><span>Nationwide Focus</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">About Wazeerzy</div>
+        <h2>Supporting Medicine Supply Through Wholesale Service</h2>
+        <p>
+          Wazeerzy Medicine Wholesale is focused on supplying medicines and
+          healthcare products to pharmacies, wholesalers, and healthcare businesses.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <h2>Who We Are</h2>
+          <p>
+            Wazeerzy Medicine Wholesale is a medicine wholesale business based in
+            Afghanistan. We focus on wholesale supply, product inquiries, bulk orders,
+            and customer service for pharmacy and healthcare businesses.
+          </p>
+          <p>
+            Our goal is to make medicine procurement more convenient by providing
+            clear product information, wholesale communication, and easy ordering
+            through WhatsApp.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>Our Mission</h3>
+          <p>
+            To build a reliable and accessible wholesale supply network that helps
+            pharmacies and healthcare businesses obtain the products they need.
+          </p>
+
+          <h3>Our Vision</h3>
+          <p>
+            To develop a professional medicine wholesale and distribution network
+            serving customers throughout Afghanistan.
+          </p>
+
+          <ul class="check-list">
+            <li>Wholesale-focused customer service</li>
+            <li>Easy WhatsApp ordering and inquiries</li>
+            <li>Product and price-list support</li>
+            <li>Long-term business relationships</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="background:var(--light);">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">What We Do</div>
+        <h2>Our Wholesale Services</h2>
+        <p>Services designed around the needs of pharmacy and healthcare businesses.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">💊</div>
+          <h3>Medicine Wholesale</h3>
+          <p>Wholesale supply and product inquiries for medicines and healthcare products.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏪</div>
+          <h3>Pharmacy Supply</h3>
+          <p>Business-to-business supply support for pharmacies and medicine retailers.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📦</div>
+          <h3>Bulk Orders</h3>
+          <p>Contact us for larger quantities, wholesale requirements, and product availability.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>WhatsApp Ordering</h3>
+          <p>Send your product inquiry or order request directly through WhatsApp.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📋</div>
+          <h3>Price Information</h3>
+          <p>Request the latest wholesale price information and product availability.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🇦🇫</div>
+          <h3>Afghanistan Market</h3>
+          <p>Focused on supporting medicine businesses and customers across Afghanistan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Product Range</div>
+        <h2>Medicine & Healthcare Products</h2>
+        <p>
+          Our product range is organized around common pharmacy and healthcare needs.
+          Availability may change, so please contact us for the latest stock information.
+        </p>
+      </div>
+
+      <div class="product-note">
+        <strong>Looking for a specific product?</strong><br>
+        Send the product name, strength, pack size, and required quantity on WhatsApp.
+        Our team can confirm availability and wholesale pricing.
+      </div>
+
+      <div class="category-grid">
+        <div class="category"><span>💊</span>Tablets</div>
+        <div class="category"><span>💊</span>Capsules</div>
+        <div class="category"><span>🧴</span>Syrups & Oral Liquids</div>
+        <div class="category"><span>💉</span>Injections</div>
+        <div class="category"><span>🩹</span>Medical Supplies</div>
+        <div class="category"><span>🌿</span>Herbal Products</div>
+        <div class="category"><span>🧒</span>Pediatric Products</div>
+        <div class="category"><span>❤️</span>General Healthcare</div>
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a class="btn btn-orange"
+           href="https://wa.me/93771718350?text=Hello%20Wazeerzy,%20I%20would%20like%20to%20check%20product%20availability%20and%20wholesale%20price."
+           target="_blank" rel="noopener">
+          📱 Ask About Products
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE LIST -->
+  <section id="price-list">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Wholesale Pricing</div>
+        <h2>Price List</h2>
+        <p>Request the latest wholesale prices and product availability directly from Wazeerzy.</p>
+      </div>
+
+      <div class="price-box">
+        <h3>Need the Latest Price List?</h3>
+        <p>
+          Wholesale prices and availability can change. For the most current information,
+          contact us through WhatsApp and request the latest price list.
+        </p>
+
+        <a class="btn btn-orange"
+           href="https://wa.me/93771718350?text=Hello%20Wazeerzy,%20please%20send%20me%20your%20latest%20wholesale%20price%20list."
+           target="_blank" rel="noopener">
+          📋 Request Price List
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--light);">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers for pharmacy and wholesale customers.</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>How can I place an order?</summary>
+          <p>Send your order or product inquiry through WhatsApp. Include product name, strength, pack size, and quantity when available.</p>
+        </details>
+
+        <details>
+          <summary>Do you supply pharmacies?</summary>
+          <p>Yes. Wazeerzy focuses on wholesale supply and business inquiries for pharmacies and healthcare businesses.</p>
+        </details>
+
+        <details>
+          <summary>Can I ask about a product that is not listed on the website?</summary>
+          <p>Yes. The website shows product categories rather than a complete live inventory. Contact us with the product name and we can check availability.</p>
+        </details>
+
+        <details>
+          <summary>How can I get the latest price list?</summary>
+          <p>Use the “Request Price List” button or contact us directly on WhatsApp for the latest wholesale price information.</p>
+        </details>
+
+        <details>
+          <summary>Do you accept bulk orders?</summary>
+          <p>Yes. Contact us with the products and quantities you require so we can discuss your wholesale inquiry.</p>
+        </details>
+
+        <details>
+          <summary>Where is Wazeerzy Medicine Wholesale located?</summary>
+          <p>Chawk-e-Talashy, Shamshad Plaza, First Floor.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Get in Touch</div>
+        <h2>Contact Wazeerzy</h2>
+        <p>For orders, product availability, wholesale inquiries, and price information.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Business Information</h3>
+
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <span>Chawk-e-Talashy, Shamshad Plaza, First Floor</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">📱</div>
+            <div>
+              <strong>Phone / WhatsApp</strong>
+              <a href="tel:+93771718350">+93 771 718 350</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:enayatwazeer1@gmail.com">enayatwazeer1@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">🌐</div>
+            <div>
+              <strong>Website</strong>
+              <span>wazeerzy.github.io</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="whatsapp-box">
+          <h3>Order or Ask About a Product</h3>
+          <p>
+            For the fastest response, contact us on WhatsApp. Please include the
+            product name, strength, pack size, quantity, and your location when possible.
+          </p>
+
+          <a class="btn btn-orange"
+             href="https://wa.me/93771718350?text=Hello%20Wazeerzy%20Medicine%20Wholesale,%20I%20would%20like%20to%20make%20a%20wholesale%20inquiry."
+             target="_blank" rel="noopener">
+            📱 Chat on WhatsApp
+          </a>
+
+          <a class="btn btn-white" style="margin-left:8px;"
+             href="mailto:enayatwazeer1@gmail.com">
+            ✉️ Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>WAZEERZY MEDICINE WHOLESALE</h3>
+        <p>
+          Wholesale medicine and healthcare product supply for pharmacies,
+          wholesalers, and healthcare businesses in Afghanistan.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#about">About Us</a></p>
+        <p><a href="#products">Products</a></p>
+        <p><a href="#price-list">Price List</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>📍 Chawk-e-Talashy, Shamshad Plaza, First Floor</p>
+        <p>📱 <a href="tel:+93771718350">+93 771 718 350</a></p>
+        <p>✉️ <a href="mailto:enayatwazeer1@gmail.com">enayatwazeer1@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> Wazeerzy Medicine Wholesale. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const nav = document.getElementById("nav");
+
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    menuBtn.textContent = nav.classList.contains("open") ? "✕" : "☰";
+  });
+
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuBtn.textContent = "☰";
+    });
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
